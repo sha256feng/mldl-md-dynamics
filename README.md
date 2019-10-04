@@ -1,4 +1,4 @@
-# mldl-md-dynamics
+# Machine learning/deep learning in molecular dynamics
 A repository of update in molecular dynamics field by recent progress in machine learning and deep learning.
 
 [Equivariant Hamiltonian Flows](https://arxiv.org/abs/1909.13739)   
@@ -17,4 +17,8 @@ This paper from Google, PetCube and Uber trains models to learn conservation law
 [Symplectic Recurrent Neural Networks](https://arxiv.org/abs/1909.13334)   
 Zhengdao Chen, Jianyu Zhang, Martin Arjovsky, Léon Bottou.   
 The authors from NYU, Tianjin University, and Facebook proposes SRNN to capture the dynamics of physical systems from observed trajectories.  
+
+[Physical Symmetries Embedded in Neural Networks](https://arxiv.org/abs/1904.08991)   
+M. Mattheakis, P. Protopapas, D. Sondak, M. Di Giovanni, E. Kaxiras.   
+The authors from Harvard and Polytechnic Milan used symplectic neural network to embed physics symmetry in the neural network to characterize the dynamics. 
 
