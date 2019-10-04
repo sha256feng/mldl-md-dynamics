@@ -1,10 +1,4 @@
 # Machine learning/deep learning in molecular dynamics
-<img src="https://pubs.rsc.org/en/Content/Image/GA/C7SC02267K" align="center" alt="Machine learning molecular dynamics for the simulation of infrared spectra">
-(Picture from Machine learning molecular dynamics for the simulation of infrared spectra. )
-&nbsp;  
-
-&nbsp;  
-
 
 A repository of update in molecular dynamics field by recent progress in machine learning and deep learning. Those efforts are cast into the following categories: 
 1. Learn the force field or molecular interactions;  
@@ -12,6 +6,15 @@ A repository of update in molecular dynamics field by recent progress in machine
 3. Learn the collective variable to bias enhanced sampling;  
 4. Capture the dynamics of the molecular system; 
 5. Map between all atoms and coarse grain;
+
+
+&nbsp;  
+
+<img src="https://pubs.rsc.org/en/Content/Image/GA/C7SC02267K" align="center" alt="Machine learning molecular dynamics for the simulation of infrared spectra">
+(Picture from Machine learning molecular dynamics for the simulation of infrared spectra. )
+&nbsp;  
+
+
 
 
 ### 4. Capture the dynamics of the molecular system 
