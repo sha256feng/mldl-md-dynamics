@@ -1,5 +1,13 @@
 # Machine learning/deep learning in molecular dynamics
-A repository of update in molecular dynamics field by recent progress in machine learning and deep learning.
+A repository of update in molecular dynamics field by recent progress in machine learning and deep learning. Those efforts are cast into the following categories: 
+1. Learn the force field or molecular interactions;  
+2. Enhanced sampling methods;
+3. Learn the collective variable to bias enhanced sampling;  
+4. Capture the dynamics of the molecular system; 
+5. Map between all atoms and coarse grain;
+
+
+### 4. Capture the dynamics of the molecular system 
 
 [Equivariant Hamiltonian Flows](https://arxiv.org/abs/1909.13739)   
 Danilo Jimenez Rezende, Sébastien Racanière, Irina Higgins, Peter Toth.  
