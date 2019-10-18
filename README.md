@@ -1,4 +1,4 @@
-# Machine learning/deep learning in molecular dynamics
+# Awesome machine learning/deep learning in molecular dynamics
 
 A repository of update in molecular dynamics field by recent progress in machine learning and deep learning. Those efforts are cast into the following categories: 
 1. Learn force field or molecular interactions;  
