@@ -63,6 +63,10 @@ The authors from NYU, Tianjin University, and Facebook proposes SRNN to capture 
 M. Mattheakis, P. Protopapas, D. Sondak, M. Di Giovanni, E. Kaxiras.   
 The authors from Harvard and Polytechnic Milan used symplectic neural network to embed physics symmetry in the neural network to characterize the dynamics. 
 
+[Neural Canonical Transformation with Symplectic Flows](https://arxiv.org/abs/1910.00024)   
+Shuo-Hui Li, Chen-Xiao Dong, Linfeng Zhang, Lei Wang. (2019)   
+The authors from CAS, Princeton Univ., and Songshan Lake Materials Lab constructed canonical transformation with symplectic neural networks. Such formulations help understand the physical meaning of latend space in the model. The authors applied this to learn slow CV of analine dipeptide and conceptual compression of MNIST dataset. 
+
 ### 5. Coarse grain models 
 [Machine Learning of coarse-grained Molecular Dynamics Force Fields](https://arxiv.org/pdf/1812.01736.pdf)   
 Jiang Wang, Simon Olsson, Christoph Wehmeyer, Adrià Pérez, Nicholas E. Charron, Gianni de Fabritiis, Frank Noé, Cecilia Clementi. (2018)   
