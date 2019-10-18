@@ -60,7 +60,13 @@ The authors from NYU, Tianjin University, and Facebook proposes SRNN to capture 
 M. Mattheakis, P. Protopapas, D. Sondak, M. Di Giovanni, E. Kaxiras.   
 The authors from Harvard and Polytechnic Milan used symplectic neural network to embed physics symmetry in the neural network to characterize the dynamics. 
 
+### 5. Coarse grain models 
+[Machine Learning of coarse-grained Molecular Dynamics Force Fields](https://arxiv.org/pdf/1812.01736.pdf)   
+Jiang Wang, Simon Olsson, Christoph Wehmeyer, Adrià Pérez, Nicholas E. Charron, Gianni de Fabritiis, Frank Noé, Cecilia Clementi.   
+The authors from Rice University, Freie Universität Berlin, and Universitat Pompeu Fabra presented CGnet which learns coarse grain force field, which has something similar to those quantum mechanics property learning algorithms. They demonstrated the model performance on dialanine peptide simulation and Chignolin folding/unfolding in water. 
+
+
 ### 6. Design proteins 
 [Generative models for graph-based protein design](https://openreview.net/pdf?id=SJgxrLLKOE)   
 John Ingraham, Vikas K. Garg, Regina Barzilay, Tommi Jaakkola. (2019)   
-This paper from MIT used generative graph model to design proteins. The authors showed their approach efficiently captures the long-range interactions that are distant in sequence but local in 3D structure. 
+This paper from MIT used generative graph model to design proteins. View this as a reverse problem of protein folding/structure prediction, the authors showed their approach efficiently captures the long-range interactions that are distant in sequence but local in 3D structure. 
