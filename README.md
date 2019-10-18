@@ -3,9 +3,10 @@
 A repository of update in molecular dynamics field by recent progress in machine learning and deep learning. Those efforts are cast into the following categories: 
 1. Learn force field or molecular interactions;  
 2. Enhanced sampling methods;
-3. Learn collective variable to bias enhanced sampling;  
+3. Learn collective variable;  
 4. Capture dynamics of molecular system; 
-5. Map between all atoms and coarse grain;
+5. Map between all atoms and coarse grain;  
+6. Design proteins;  
 
 
 &nbsp;  
@@ -59,3 +60,7 @@ The authors from NYU, Tianjin University, and Facebook proposes SRNN to capture 
 M. Mattheakis, P. Protopapas, D. Sondak, M. Di Giovanni, E. Kaxiras.   
 The authors from Harvard and Polytechnic Milan used symplectic neural network to embed physics symmetry in the neural network to characterize the dynamics. 
 
+### 6. Design proteins 
+[Generative models for graph-based protein design](https://openreview.net/pdf?id=SJgxrLLKOE)   
+John Ingraham, Vikas K. Garg, Regina Barzilay, Tommi Jaakkola. (2019)   
+This paper from MIT used generative graph model to design proteins. The authors showed their approach efficiently captures the long-range interactions that are distant in sequence but local in 3D structure. 
