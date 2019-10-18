@@ -16,10 +16,17 @@ A repository of update in molecular dynamics field by recent progress in machine
 
 
 ### 1. Learn force field or molecular interactions  
+[ANI-1: an extensible neural network potential with DFT accuracy at force field computational cost](https://doi.org/10.1039/c6sc05720a)   
+J. S. Smith, Isayev, A. E. Roitberg. (2017)   
+This paper from Univ. of Florida and Univ. of North Carolina presented ANI-1, which used Behler and Parrinello symmetry functions to build single-atom atomic environment vectors (AEV) as molecular representation. This is similar to the context representation of work in NLP.  
 
 [Neural Message Passing with Edge Updates for Predicting Properties of Molecules and Materials](https://arxiv.org/abs/1806.03146)   
-Peter Bjørn Jørgensen, Karsten Wedel Jacobsen, Mikkel N. Schmidt. (2018)
+Peter Bjørn Jørgensen, Karsten Wedel Jacobsen, Mikkel N. Schmidt. (2018)   
 This paper from Univ. of Denmark extended neural message passing model with an edge update NN, so that information exchanges between atoms depend on hidden state of the receiving atom. They also explored ways to construct the graph. 
+
+[SchNet – A deep learning architecture for molecules and materials](https://aip.scitation.org/doi/10.1063/1.5019779)    
+K. T. Schütt, H. E. Sauceda, P.-J. Kindermans, A. Tkatchenko, K.-R. Müller. (2018)   
+This paper from Technische Universita ̈t Berlin, Univ. of Luxembourg, Max Planck Institute, and Korea University presented SchNet, a variant of DTNN to learn the molecular properties and studied local chemical potential and the dynamics of C20-fullerene.  
 
 [Message-passing neural networks for high-throughput polymer screening](https://aip.scitation.org/doi/10.1063/1.5099132)  
 Peter C. St. John1, Caleb Phillips, Travis W. Kemper, A. Nolan Wilson, Yanfei Guan,  Michael F. Crowley, Mark R. Nimlos, Ross E. Larsen. (2019)  
