@@ -40,6 +40,12 @@ This paper from National Renewable Energy Lab, USA, used message-passing NN to p
 Roman Zubatyuk, Justin S. Smith, Jerzy Leszczynski and Olexandr Isayev. (2019)   
 This paper from Univ. of North Carolina, Los Alamos National Lab, and Jackson State Univ presented AIMNet to leearn implicit solvation energy in MNSol database. Atoms in molecules are embedded and interact with each in several layers. 
 
+### 2. Enhanced sampling methods with ML/DL
+[Reinforced dynamics for enhanced sampling in large atomic and molecular systems](https://aip.scitation.org/doi/full/10.1063/1.5019675)    
+Linfeng Zhang,  Han Wang, Weinan E. (2018)   
+This paper from Peking Univ., Princeton Univ, and IAPCM, China used reinforcement learning to calculate the biasing potential on the fly, with data collected judiciously from exploration and an uncertainty indicator from NN serving as the reward function. 
+
+
 ### 4. Capture the dynamics of the molecular system 
 
 [Equivariant Hamiltonian Flows](https://arxiv.org/abs/1909.13739)   
@@ -71,6 +77,10 @@ The authors from CAS, Princeton Univ., and Songshan Lake Materials Lab construct
 [Machine Learning of coarse-grained Molecular Dynamics Force Fields](https://arxiv.org/pdf/1812.01736.pdf)   
 Jiang Wang, Simon Olsson, Christoph Wehmeyer, Adrià Pérez, Nicholas E. Charron, Gianni de Fabritiis, Frank Noé, Cecilia Clementi. (2018)   
 The authors from Rice University, Freie Universität Berlin, and Universitat Pompeu Fabra presented CGnet which learns coarse grain force field, which has something similar to those quantum mechanics property learning algorithms. They demonstrated the model performance on dialanine peptide simulation and Chignolin folding/unfolding in water. 
+
+[DeePCG: Constructing coarse-grained models via deep neural networks](https://aip.scitation.org/doi/full/10.1063/1.5027645)   
+Linfeng Zhang, Jiequn Han,  Han Wang, Roberto Car, and Weinan E. (2018)  
+The authors from Peking Univ, Princeton Univ, and IAPCM, China presented DeepCG to construct a many-body CG potential. The authors applied this to liquid water and did CG simulation starting from an atomistic simulation at ab inito level.  
 
 [Adversarial-Residual-Coarse-Graining: Applying machine learning theory to systematic molecular coarse-graining](https://arxiv.org/abs/1904.00871)   
 Aleksander E. P. Durumeric, Gregory A. Voth. (2019)    
