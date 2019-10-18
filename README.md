@@ -45,6 +45,14 @@ This paper from Univ. of North Carolina, Los Alamos National Lab, and Jackson St
 Linfeng Zhang,  Han Wang, Weinan E. (2018)   
 This paper from Peking Univ., Princeton Univ, and IAPCM, China used reinforcement learning to calculate the biasing potential on the fly, with data collected judiciously from exploration and an uncertainty indicator from NN serving as the reward function. 
 
+### 3. Learn collective variables 
+[Transferable Neural Networks for Enhanced Sampling of Protein Dynamics](http://dx.doi.org/10.1021/acs.jctc.8b00025)  
+Mohammad M. Sultan, Hannah K. Wayment-Steele, Vijay S. Pande. (2018)   
+The authors from Stanford Univ used variational autoencoder with time-lagged information to learn the collective variable in latent space. They then used the latend space representation in well-tempered ensemble metadynamics. The authors showed such learned latend space is transferrable for proteins with certain mutations or between force fields. 
+
+[Time-lagged autoencoders: Deep learning of slow collective variables for molecular kinetics](https://aip.scitation.org/doi/full/10.1063/1.5011399)   
+Christoph Wehmeyera, Frank Noé. (2018)   
+The authors from Freie Universität Berlin built time-lagged autoencoders to learn the slow collective variables. This is similar work to the above Pande group work. Both are trying to embed high-dimensional information into low-dim manifolds. 
 
 ### 4. Capture the dynamics of the molecular system 
 
