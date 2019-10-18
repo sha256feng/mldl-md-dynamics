@@ -62,9 +62,12 @@ The authors from Harvard and Polytechnic Milan used symplectic neural network to
 
 ### 5. Coarse grain models 
 [Machine Learning of coarse-grained Molecular Dynamics Force Fields](https://arxiv.org/pdf/1812.01736.pdf)   
-Jiang Wang, Simon Olsson, Christoph Wehmeyer, Adrià Pérez, Nicholas E. Charron, Gianni de Fabritiis, Frank Noé, Cecilia Clementi.   
+Jiang Wang, Simon Olsson, Christoph Wehmeyer, Adrià Pérez, Nicholas E. Charron, Gianni de Fabritiis, Frank Noé, Cecilia Clementi. (2018)   
 The authors from Rice University, Freie Universität Berlin, and Universitat Pompeu Fabra presented CGnet which learns coarse grain force field, which has something similar to those quantum mechanics property learning algorithms. They demonstrated the model performance on dialanine peptide simulation and Chignolin folding/unfolding in water. 
 
+[Adversarial-Residual-Coarse-Graining: Applying machine learning theory to systematic molecular coarse-graining](https://arxiv.org/abs/1904.00871)   
+Aleksander E. P. Durumeric, Gregory A. Voth. (2019)    
+The authors from Univ. of Chicago employed generative adversial network (GAN) for systematic molecular coarse-graining. They showed that the resulting framework can rigorously parameterize CG models containing CG sites with no prescribed connection to the reference atomistic system.  
 
 ### 6. Design proteins 
 [Generative models for graph-based protein design](https://openreview.net/pdf?id=SJgxrLLKOE)   
