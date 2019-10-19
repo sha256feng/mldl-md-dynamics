@@ -12,7 +12,7 @@ A repository of update in molecular dynamics field by recent progress in machine
 &nbsp;  
 
 <img src="https://pubs.rsc.org/en/Content/Image/GA/C7SC02267K" align="center" alt="Machine learning molecular dynamics for the simulation of infrared spectra">
-(Picture from Machine learning molecular dynamics for the simulation of infrared spectra. )
+(Picture from *Machine learning molecular dynamics for the simulation of infrared spectra*. )
 &nbsp;  
 
 
