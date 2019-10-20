@@ -63,6 +63,10 @@ The authors from Stanford Univ used variational autoencoder with time-lagged inf
 Christoph Wehmeyera, Frank Noé. (2018)   
 The authors from Freie Universität Berlin built time-lagged autoencoders to learn the slow collective variables. This is similar work to the above Pande group work. Both are trying to embed high-dimensional information into low-dim manifolds. 
 
+[Reweighted autoencoded variational Bayes for enhanced sampling (RAVE)](https://aip.scitation.org/doi/10.1063/1.5025487)   
+João Marcelo Lamim Ribeiro,  Pablo Bravo,  Yihang Wang, and Pratyush Tiwary. (2018)   
+This paper from Univ of Maryland and Pontificia Universidad Catolica de Chile used variational autoencoder and Bayes theorem to find the reaction coordinates and approapriate weights. Kullback-Leibler divergence is calculated between this latent space distribution and the distribution of various trial reaction coordinates sampled from the simulation.
+
 ### 4. Capture the dynamics of the molecular system 
 
 [Equivariant Hamiltonian Flows](https://arxiv.org/abs/1909.13739)   
