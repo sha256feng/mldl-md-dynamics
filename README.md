@@ -3,10 +3,11 @@
 A repository of update in molecular dynamics field by recent progress in machine learning and deep learning. Those efforts are cast into the following categories: 
 1. Learn force field or molecular interactions;  
 2. Enhanced sampling methods;
-3. Learn collective variable;  
-4. Capture dynamics of molecular system; 
-5. Map between all atoms and coarse grain;  
-6. Design proteins;  
+3. Learn collective variable;
+4. Learn kinetic model;
+5. Capture dynamics of molecular system; 
+6. Map between all atoms and coarse grain;  
+7. Design proteins;  
 
 
 &nbsp;  
@@ -49,29 +50,42 @@ This paper from Peking Univ., Princeton Univ, and IAPCM, China used reinforcemen
 Zahra Shamsi, Kevin J. Cheng, Diwakar Shukla. (2018)   
 This paper from UIUC used reinforcement learning to adaptively biase the sampling potential. The action in this RL problem is to pick new structures to start a swarm of simulations, and the reward function is how far order parameters sample the landscape. 
 
-
 [Boltzmann generators: Sampling equilibrium states of many-body systems with deep learning](https://science.sciencemag.org/content/365/6457/eaaw1147)   
 Frank Noé, Simon Olsson, Jonas Köhler, Hao Wu. (2019)   
-This paper from FU Berlin, Rice Univ and Tongji Univ used a generative model, Boltzmann generator machine, to generate unbiased equilibrium samples from different metastable states in one shot. This model is said to overcome rare event-sampling problems in many-body systems. 
+This paper from Freie Universität Berlin, Rice Univ and Tongji Univ used a generative model, Boltzmann generator machine, to generate unbiased equilibrium samples from different metastable states in one shot. This model is said to overcome rare event-sampling problems in many-body systems. 
+
+[Targeted Adversarial Learning Optimized Sampling](https://pubs.acs.org/doi/10.1021/acs.jpclett.9b02173)   
+Justin Zhang, Yi Isaac Yang, Frank Noé (2019)
+The authors from Freie Universität Berlin use adversarial training to steer a molecular dynamics ensemble towards a desired target distribution, overcoming rare-event sampling problems.
+
 
 ### 3. Learn collective variables 
 [Transferable Neural Networks for Enhanced Sampling of Protein Dynamics](http://dx.doi.org/10.1021/acs.jctc.8b00025)  
 Mohammad M. Sultan, Hannah K. Wayment-Steele, Vijay S. Pande. (2018)   
-The authors from Stanford Univ used variational autoencoder with time-lagged information to learn the collective variable in latent space. They then used the latend space representation in well-tempered ensemble metadynamics. The authors showed such learned latend space is transferrable for proteins with certain mutations or between force fields. 
+The authors from Stanford Univ used variational autoencoder with time-lagged information to learn the collective variable in latent space. They then used the latent space representation in well-tempered ensemble metadynamics. The authors showed such learned latend space is transferrable for proteins with certain mutations or between force fields. 
 
 [Time-lagged autoencoders: Deep learning of slow collective variables for molecular kinetics](https://aip.scitation.org/doi/full/10.1063/1.5011399)   
-Christoph Wehmeyera, Frank Noé. (2018)   
-The authors from Freie Universität Berlin built time-lagged autoencoders to learn the slow collective variables. This is similar work to the above Pande group work. Both are trying to embed high-dimensional information into low-dim manifolds. 
+Christoph Wehmeyer, Frank Noé. (2018)   
+The authors from Freie Universität Berlin built time-lagged autoencoders to learn the slow collective variables. They show that time-lagged autoencoders are a nonlinear generalization of the time-lagged independent component analysis (TICA) method. 
 
 [Reweighted autoencoded variational Bayes for enhanced sampling (RAVE)](https://aip.scitation.org/doi/10.1063/1.5025487)   
 João Marcelo Lamim Ribeiro,  Pablo Bravo,  Yihang Wang, and Pratyush Tiwary. (2018)   
 This paper from Univ of Maryland and Pontificia Universidad Catolica de Chile used variational autoencoder and Bayes theorem to find the reaction coordinates and approapriate weights. Kullback-Leibler divergence is calculated between this latent space distribution and the distribution of various trial reaction coordinates sampled from the simulation.
 
-### 4. Capture the dynamics of the molecular system 
+### 4. Learn kinetic model
+[VAMPnets for deep learning of molecular kinetics](https://www.nature.com/articles/s41467-017-02388-1)  
+Andreas Mardt, Luca Pasquali, Hao Wu, Frank Noé (2018)
+The authors from Freie Universität Berlin employ the variational approach for Markov processes (VAMP) to develop a deep learning framework for molecular kinetics using neural networks, dubbed VAMPnets. A VAMPnet encodes the entire mapping from molecular coordinates to a Markov state model (MSM), thus combining the MSM whole data processing pipeline in a single end-to-end framework. 
+
+### 5. Capture the dynamics of the molecular system 
 
 [Equivariant Hamiltonian Flows](https://arxiv.org/abs/1909.13739)   
 Danilo Jimenez Rezende, Sébastien Racanière, Irina Higgins, Peter Toth.  
 This paper from Google uses Lie algebra to prove what hamiltonian flow learns and how addition of symmetry invariance constraints can improve data efficiency. 
+
+[Equivariant Flows: sampling configurations formulti-body systems with symmetric energies](https://arxiv.org/abs/1910.00753)   
+Jonas Köhler, Leon Klein, Frank Noé.
+This paper from Freie Universität Berlin model flows that have symmetries in the energy built in, such as roto-translational and permutational invariances, as a system of interacting particles. Can be used both for learning particle dynamics and sampling equilibrium states.
 
 [Symplectic ODE-NET: learning Hamiltonian dynamics with control](https://arxiv.org/abs/1909.12077)    
 Yaofeng Desmond Zhong, Biswadip Dey, Amit Chakraborty.    
@@ -80,7 +94,6 @@ This paper from Princeton University and Siemens Corp infers the dynamics of a p
 [Hamiltonian Neural Networks](https://arxiv.org/abs/1906.01563)   
 Sam Greydanus, Misko Dzamba, Jason Yosinski.    
 This paper from Google, PetCube and Uber trains models to learn conservation law of Hamiltonian in unsupervised way.  
-
 
 [Symplectic Recurrent Neural Networks](https://arxiv.org/abs/1909.13334)   
 Zhengdao Chen, Jianyu Zhang, Martin Arjovsky, Léon Bottou.   
@@ -94,10 +107,10 @@ The authors from Harvard and Polytechnic Milan used symplectic neural network to
 Shuo-Hui Li, Chen-Xiao Dong, Linfeng Zhang, Lei Wang. (2019)   
 The authors from CAS, Princeton Univ., and Songshan Lake Materials Lab constructed canonical transformation with symplectic neural networks. Such formulations help understand the physical meaning of latend space in the model. The authors applied this to learn slow CV of analine dipeptide and conceptual compression of MNIST dataset. 
 
-### 5. Coarse grain models 
+### 6. Coarse grain models 
 [Machine Learning of coarse-grained Molecular Dynamics Force Fields](https://arxiv.org/pdf/1812.01736.pdf)   
 Jiang Wang, Simon Olsson, Christoph Wehmeyer, Adrià Pérez, Nicholas E. Charron, Gianni de Fabritiis, Frank Noé, Cecilia Clementi. (2018)   
-The authors from Rice University, Freie Universität Berlin, and Universitat Pompeu Fabra presented CGnet which learns coarse grain force field, which has something similar to those quantum mechanics property learning algorithms. They demonstrated the model performance on dialanine peptide simulation and Chignolin folding/unfolding in water. 
+The authors from Rice University, Freie Universität Berlin, and Universitat Pompeu Fabra presented CGnet which learns coarse grain force field by using variational force matching. They also recast force-matching as a machine learning problem, allowing to decompose the force matching error into bias, variance and noise. They demonstrated the model performance on dialanine peptide simulation and Chignolin folding/unfolding in water. 
 
 [DeePCG: Constructing coarse-grained models via deep neural networks](https://aip.scitation.org/doi/full/10.1063/1.5027645)   
 Linfeng Zhang, Jiequn Han,  Han Wang, Roberto Car, and Weinan E. (2018)  
@@ -107,7 +120,7 @@ The authors from Peking Univ, Princeton Univ, and IAPCM, China presented DeepCG 
 Aleksander E. P. Durumeric, Gregory A. Voth. (2019)    
 The authors from Univ. of Chicago employed generative adversial network (GAN) for systematic molecular coarse-graining. They showed that the resulting framework can rigorously parameterize CG models containing CG sites with no prescribed connection to the reference atomistic system.  
 
-### 6. Design proteins 
+### 7. Design proteins 
 (Though this part is less connected to MD simulation, some of the ML-based protein design algorithms are actually inditectly learning the potential energy of proteins. So we keep a small portion here.)    
 
 [Generative models for graph-based protein design](https://openreview.net/pdf?id=SJgxrLLKOE)   
