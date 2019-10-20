@@ -104,7 +104,7 @@ Aleksander E. P. Durumeric, Gregory A. Voth. (2019)
 The authors from Univ. of Chicago employed generative adversial network (GAN) for systematic molecular coarse-graining. They showed that the resulting framework can rigorously parameterize CG models containing CG sites with no prescribed connection to the reference atomistic system.  
 
 ### 6. Design proteins 
-(Though this part is less connected to MD simulation, some of the ML-based protein design algorithms are actually inditectly learning the potential energy of proteins. So we keep a small portion here.    
+(Though this part is less connected to MD simulation, some of the ML-based protein design algorithms are actually inditectly learning the potential energy of proteins. So we keep a small portion here.)    
 
 [Generative models for graph-based protein design](https://openreview.net/pdf?id=SJgxrLLKOE)   
 John Ingraham, Vikas K. Garg, Regina Barzilay, Tommi Jaakkola. (2019)   
