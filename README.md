@@ -45,6 +45,15 @@ This paper from Univ. of North Carolina, Los Alamos National Lab, and Jackson St
 Linfeng Zhang,  Han Wang, Weinan E. (2018)   
 This paper from Peking Univ., Princeton Univ, and IAPCM, China used reinforcement learning to calculate the biasing potential on the fly, with data collected judiciously from exploration and an uncertainty indicator from NN serving as the reward function. 
 
+[Reinforcement Learning Based Adaptive Sampling: REAPing Rewards by Exploring Protein Conformational Landscapes](https://pubs.acs.org/doi/abs/10.1021/acs.jpcb.8b06521)  
+Zahra Shamsi, Kevin J. Cheng, Diwakar Shukla. (2018)   
+This paper from UIUC used reinforcement learning to adaptively biase the sampling potential. The action in this RL problem is to pick new structures to start a swarm of simulations, and the reward function is how far order parameters sample the landscape. 
+
+
+[Boltzmann generators: Sampling equilibrium states of many-body systems with deep learning](https://science.sciencemag.org/content/365/6457/eaaw1147)   
+Frank Noé, Simon Olsson, Jonas Köhler, Hao Wu. (2019)   
+This paper from FU Berlin, Rice Univ and Tongji Univ used a generative model, Boltzmann generator machine, to generate unbiased equilibrium samples from different metastable states in one shot. This model is said to overcome rare event-sampling problems in many-body systems. 
+
 ### 3. Learn collective variables 
 [Transferable Neural Networks for Enhanced Sampling of Protein Dynamics](http://dx.doi.org/10.1021/acs.jctc.8b00025)  
 Mohammad M. Sultan, Hannah K. Wayment-Steele, Vijay S. Pande. (2018)   
@@ -95,6 +104,8 @@ Aleksander E. P. Durumeric, Gregory A. Voth. (2019)
 The authors from Univ. of Chicago employed generative adversial network (GAN) for systematic molecular coarse-graining. They showed that the resulting framework can rigorously parameterize CG models containing CG sites with no prescribed connection to the reference atomistic system.  
 
 ### 6. Design proteins 
+(Though this part is less connected to MD simulation, some of the ML-based protein design algorithms are actually inditectly learning the potential energy of proteins. So we keep a small portion here.    
+
 [Generative models for graph-based protein design](https://openreview.net/pdf?id=SJgxrLLKOE)   
 John Ingraham, Vikas K. Garg, Regina Barzilay, Tommi Jaakkola. (2019)   
 This paper from MIT used generative graph model to design proteins. View this as a reverse problem of protein folding/structure prediction, the authors showed their approach efficiently captures the long-range interactions that are distant in sequence but local in 3D structure. 
