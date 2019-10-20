@@ -73,8 +73,9 @@ João Marcelo Lamim Ribeiro,  Pablo Bravo,  Yihang Wang, and Pratyush Tiwary. (2
 This paper from Univ of Maryland and Pontificia Universidad Catolica de Chile used variational autoencoder and Bayes theorem to find the reaction coordinates and approapriate weights. Kullback-Leibler divergence is calculated between this latent space distribution and the distribution of various trial reaction coordinates sampled from the simulation.
 
 ### 4. Learn kinetic model
+
 [VAMPnets for deep learning of molecular kinetics](https://www.nature.com/articles/s41467-017-02388-1)  
-Andreas Mardt, Luca Pasquali, Hao Wu, Frank Noé (2018)
+Andreas Mardt, Luca Pasquali, Hao Wu, Frank Noé (2018)    
 The authors from Freie Universität Berlin employ the variational approach for Markov processes (VAMP) to develop a deep learning framework for molecular kinetics using neural networks, dubbed VAMPnets. A VAMPnet encodes the entire mapping from molecular coordinates to a Markov state model (MSM), thus combining the MSM whole data processing pipeline in a single end-to-end framework. 
 
 ### 5. Capture the dynamics of the molecular system 
