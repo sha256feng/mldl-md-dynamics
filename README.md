@@ -7,7 +7,8 @@ A repository of update in molecular dynamics field by recent progress in machine
 4. [Learn kinetic model](#kinetic)
 5. [Capture dynamics of molecular system](#dynamic) 
 6. [Map between all atoms and coarse grain](#cg)  
-7. [Design proteins](#designprot)  
+7. [Dimensionality reduction](#dimred)
+8. [Design proteins](#designprot)  
 
 
 &nbsp;  
@@ -142,7 +143,12 @@ The authors from Peking Univ, Princeton Univ, and IAPCM, China presented DeepCG 
 Aleksander E. P. Durumeric, Gregory A. Voth. (2019)    
 The authors from Univ. of Chicago employed generative adversial network (GAN) for systematic molecular coarse-graining. They showed that the resulting framework can rigorously parameterize CG models containing CG sites with no prescribed connection to the reference atomistic system.  
 
-### 7. Design proteins <a name="designprot"></a>
+### 7. Dimensionality reduction <a name="dimred"></a>
+[Machine Learning Based Dimensionality Reduction Facilitates Ligand Diffusion Paths Assessment: A Case of Cytochrome P450cam](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.6b00212)   
+Jakub Rydzewski, and Wieslaw Nowak. (2016)   
+The authors from Nicolaus Copernicus University showed how t-distributed stochastic neighbor embedding (t-SNE) can be applied to analyze the process of camphor unbinding from cytochrome P450cam via multiple reaction pathways. 
+
+### 8. Design proteins <a name="designprot"></a>
 (Though this part is less connected to MD simulation, some of the ML-based protein design algorithms are actually inditectly learning the potential energy of proteins. So we keep a small portion here.)    
 
 [Generative models for graph-based protein design](https://openreview.net/pdf?id=SJgxrLLKOE)   
