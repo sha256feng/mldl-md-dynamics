@@ -67,6 +67,9 @@ This paper from Freie Universität Berlin, Rice Univ and Tongji Univ used a gene
 Justin Zhang, Yi Isaac Yang, Frank Noé (2019)
 The authors from Freie Universität Berlin use adversarial training to steer a molecular dynamics ensemble towards a desired target distribution, overcoming rare-event sampling problems.
 
+[Neural networks-based variationally enhanced sampling](https://doi.org/10.1073/pnas.1907975116)  
+Luigi Bonati, Yue-Yu Zhang,  Michele Parrinello. (2019)   
+The authors from ETH Zurich, Universita della Svizzera italiana, MARVEL (Switzerland), and Italian Institute of Technology presented a NN-based bias potential for enhanced sampling, building on their previous work of variationally enhanced sampling. Deep learning provides an expressive tool for mapping from CV to actual bias potential. 
 
 ### 3. Learn collective variables 
 [Transferable Neural Networks for Enhanced Sampling of Protein Dynamics](http://dx.doi.org/10.1021/acs.jctc.8b00025)  
@@ -81,6 +84,13 @@ The authors from Freie Universität Berlin built time-lagged autoencoders to lea
 João Marcelo Lamim Ribeiro,  Pablo Bravo,  Yihang Wang, and Pratyush Tiwary. (2018)   
 This paper from Univ of Maryland and Pontificia Universidad Catolica de Chile used variational autoencoder and Bayes theorem to find the reaction coordinates and approapriate weights. Kullback-Leibler divergence is calculated between this latent space distribution and the distribution of various trial reaction coordinates sampled from the simulation.
 
+[Nonlinear discovery of slow molecular modes using state-free reversible VAMPnets](https://doi.org/10.1063/1.5092521)  
+Wei Chen, Hythem Sidky, Andrew L. Ferguson. (2019)   
+The authors from UIUC and Univ of Chicago introduced SRV, state-free reversible VAMPnets to learn nonlinear CV approximants. The work built on VAMPNet (variational approach for Markov processes networks). SRV learns the first few slow eigenfunctions of the spectral decomposition of the transfer operator, which evolves probability distribution at equilibrium through time. 
+
+[Past–future information bottleneck for sampling molecular reaction coordinate simultaneously with thermodynamics and kinetics](https://www.nature.com/articles/s41467-019-11405-4)   
+Yihang Wang, João Marcelo Lamim Ribeiro, Pratyush Tiwary. (2019)   
+The authors from Univ of Maryland used variational inference implemented in deep neural networks to infer reaction coordinates/CV. To sample the rare event, the authors took analogue of predictive information bottleneck, trying to maximize the prediction of future by utilizing the informaiton from the past. 
 
 
 ### 4. Learn kinetic model
@@ -92,27 +102,27 @@ The authors from Freie Universität Berlin employ the variational approach for M
 ### 5. Capture the dynamics of the molecular system 
 
 [Equivariant Hamiltonian Flows](https://arxiv.org/abs/1909.13739)   
-Danilo Jimenez Rezende, Sébastien Racanière, Irina Higgins, Peter Toth.  
+Danilo Jimenez Rezende, Sébastien Racanière, Irina Higgins, Peter Toth. (2019)  
 This paper from Google uses Lie algebra to prove what hamiltonian flow learns and how addition of symmetry invariance constraints can improve data efficiency. 
 
 [Equivariant Flows: sampling configurations formulti-body systems with symmetric energies](https://arxiv.org/abs/1910.00753)   
-Jonas Köhler, Leon Klein, Frank Noé.
+Jonas Köhler, Leon Klein, Frank Noé. (2019)   
 This paper from Freie Universität Berlin model flows that have symmetries in the energy built in, such as roto-translational and permutational invariances, as a system of interacting particles. Can be used both for learning particle dynamics and sampling equilibrium states.
 
 [Symplectic ODE-NET: learning Hamiltonian dynamics with control](https://arxiv.org/abs/1909.12077)    
-Yaofeng Desmond Zhong, Biswadip Dey, Amit Chakraborty.    
+Yaofeng Desmond Zhong, Biswadip Dey, Amit Chakraborty. (2019)      
 This paper from Princeton University and Siemens Corp infers the dynamics of a physical system from observed state trajectories. They embedded high dimensional coordinates into low dimensions and velocity into general momentum. 
 
 [Hamiltonian Neural Networks](https://arxiv.org/abs/1906.01563)   
-Sam Greydanus, Misko Dzamba, Jason Yosinski.    
+Sam Greydanus, Misko Dzamba, Jason Yosinski. (2019)    
 This paper from Google, PetCube and Uber trains models to learn conservation law of Hamiltonian in unsupervised way.  
 
 [Symplectic Recurrent Neural Networks](https://arxiv.org/abs/1909.13334)   
-Zhengdao Chen, Jianyu Zhang, Martin Arjovsky, Léon Bottou.   
+Zhengdao Chen, Jianyu Zhang, Martin Arjovsky, Léon Bottou. (2019)   
 The authors from NYU, Tianjin University, and Facebook proposes SRNN to capture the dynamics of physical systems from observed trajectories.  
 
 [Physical Symmetries Embedded in Neural Networks](https://arxiv.org/abs/1904.08991)   
-M. Mattheakis, P. Protopapas, D. Sondak, M. Di Giovanni, E. Kaxiras.   
+M. Mattheakis, P. Protopapas, D. Sondak, M. Di Giovanni, E. Kaxiras. (2019)    
 The authors from Harvard and Polytechnic Milan used symplectic neural network to embed physics symmetry in the neural network to characterize the dynamics. 
 
 [Neural Canonical Transformation with Symplectic Flows](https://arxiv.org/abs/1910.00024)   
