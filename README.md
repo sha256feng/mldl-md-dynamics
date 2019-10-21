@@ -7,8 +7,7 @@ A repository of update in molecular dynamics field by recent progress in machine
 4. [Learn kinetic model](#kinetic)
 5. [Capture dynamics of molecular system](#dynamic) 
 6. [Map between all atoms and coarse grain](#cg)  
-7. [Dimensionality reduction](#dimred)
-8. [Design proteins](#designprot)  
+7. [Design proteins](#designprot)  
 
 
 &nbsp;  
@@ -73,6 +72,10 @@ Luigi Bonati, Yue-Yu Zhang,  Michele Parrinello. (2019)
 The authors from ETH Zurich, Universita della Svizzera italiana, MARVEL (Switzerland), and Italian Institute of Technology presented a NN-based bias potential for enhanced sampling, building on their previous work of variationally enhanced sampling. Deep learning provides an expressive tool for mapping from CV to actual bias potential. 
 
 ### 3. Learn collective variables <a name="cv"></a>
+[Machine Learning Based Dimensionality Reduction Facilitates Ligand Diffusion Paths Assessment: A Case of Cytochrome P450cam](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.6b00212)   
+Jakub Rydzewski, and Wieslaw Nowak. (2016)   
+The authors from Nicolaus Copernicus University showed how t-distributed stochastic neighbor embedding (t-SNE) can be applied to analyze the process of camphor unbinding from cytochrome P450cam via multiple reaction pathways. 
+
 [Transferable Neural Networks for Enhanced Sampling of Protein Dynamics](http://dx.doi.org/10.1021/acs.jctc.8b00025)  
 Mohammad M. Sultan, Hannah K. Wayment-Steele, Vijay S. Pande. (2018)   
 The authors from Stanford Univ used variational autoencoder with time-lagged information to learn the collective variable in latent space. They then used the latent space representation in well-tempered ensemble metadynamics. The authors showed such learned latend space is transferrable for proteins with certain mutations or between force fields. 
@@ -143,12 +146,8 @@ The authors from Peking Univ, Princeton Univ, and IAPCM, China presented DeepCG 
 Aleksander E. P. Durumeric, Gregory A. Voth. (2019)    
 The authors from Univ. of Chicago employed generative adversial network (GAN) for systematic molecular coarse-graining. They showed that the resulting framework can rigorously parameterize CG models containing CG sites with no prescribed connection to the reference atomistic system.  
 
-### 7. Dimensionality reduction <a name="dimred"></a>
-[Machine Learning Based Dimensionality Reduction Facilitates Ligand Diffusion Paths Assessment: A Case of Cytochrome P450cam](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.6b00212)   
-Jakub Rydzewski, and Wieslaw Nowak. (2016)   
-The authors from Nicolaus Copernicus University showed how t-distributed stochastic neighbor embedding (t-SNE) can be applied to analyze the process of camphor unbinding from cytochrome P450cam via multiple reaction pathways. 
 
-### 8. Design proteins <a name="designprot"></a>
+### 7. Design proteins <a name="designprot"></a>
 (Though this part is less connected to MD simulation, some of the ML-based protein design algorithms are actually inditectly learning the potential energy of proteins. So we keep a small portion here.)    
 
 [Generative models for graph-based protein design](https://openreview.net/pdf?id=SJgxrLLKOE)   
