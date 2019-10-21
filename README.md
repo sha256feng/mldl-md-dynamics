@@ -1,13 +1,13 @@
 # Awesome machine learning/deep learning in molecular dynamics
 
 A repository of update in molecular dynamics field by recent progress in machine learning and deep learning. Those efforts are cast into the following categories: 
-1. Learn force field or molecular interactions;  
-2. Enhanced sampling methods;
-3. Learn collective variable;
-4. Learn kinetic model;
-5. Capture dynamics of molecular system; 
-6. Map between all atoms and coarse grain;  
-7. Design proteins;  
+1. [Learn force field or molecular interactions](#learnff)  
+2. [Enhanced sampling methods](#enhancesamp)
+3. [Learn collective variable](#cv)
+4. [Learn kinetic model](#kinetic)
+5. [Capture dynamics of molecular system](#dynamic) 
+6. [Map between all atoms and coarse grain](#cg)  
+7. [Design proteins](#designprot)  
 
 
 &nbsp;  
@@ -17,7 +17,7 @@ A repository of update in molecular dynamics field by recent progress in machine
 &nbsp;  
 
 
-### 1. Learn force field or molecular interactions  
+### 1. Learn force field or molecular interactions  <a name='learnff'></a>
 [Machine learning molecular dynamics for the simulation of infrared spectra](https://pubs.rsc.org/en/content/articlelanding/2017/sc/c7sc02267k)    
 Michael Gastegger, Jörg Behler, Philipp Marquet. (2017)    
 The authors from Univ. of Vienna and Universität Göttingen developed a molecular dipole moment model based on environment-dependent NN and combined with NN potential approach of Behler and Parrinello for ab inito MD. As an application, they obtained accurate models for predicting infrared spectra.  
@@ -50,7 +50,7 @@ This paper from Univ. of North Carolina, Los Alamos National Lab, and Jackson St
 Renjie Liao, Zhizhen Zhao, Raquel Urtasun, Richard S. Zemel. (2019)  
 The authors from Univ. of Toronto, Uber ATG, Vector Institute, UIUC and Canadian Institute of Advanced Research developed this spectral-based graph NN, which uses Lanczos algorithms to construct low rank approximations of the graph Laplacian. They benchmarked the model on citation networks and QM8 dataset. 
 
-### 2. Enhanced sampling methods with ML/DL
+### 2. Enhanced sampling methods with ML/DL <a name='enhancesamp'></a>
 [Reinforced dynamics for enhanced sampling in large atomic and molecular systems](https://aip.scitation.org/doi/full/10.1063/1.5019675)    
 Linfeng Zhang,  Han Wang, Weinan E. (2018)   
 This paper from Peking Univ., Princeton Univ, and IAPCM, China used reinforcement learning to calculate the biasing potential on the fly, with data collected judiciously from exploration and an uncertainty indicator from NN serving as the reward function. 
@@ -71,7 +71,7 @@ The authors from Freie Universität Berlin use adversarial training to steer a m
 Luigi Bonati, Yue-Yu Zhang,  Michele Parrinello. (2019)   
 The authors from ETH Zurich, Universita della Svizzera italiana, MARVEL (Switzerland), and Italian Institute of Technology presented a NN-based bias potential for enhanced sampling, building on their previous work of variationally enhanced sampling. Deep learning provides an expressive tool for mapping from CV to actual bias potential. 
 
-### 3. Learn collective variables 
+### 3. Learn collective variables <a name="cv"></a>
 [Transferable Neural Networks for Enhanced Sampling of Protein Dynamics](http://dx.doi.org/10.1021/acs.jctc.8b00025)  
 Mohammad M. Sultan, Hannah K. Wayment-Steele, Vijay S. Pande. (2018)   
 The authors from Stanford Univ used variational autoencoder with time-lagged information to learn the collective variable in latent space. They then used the latent space representation in well-tempered ensemble metadynamics. The authors showed such learned latend space is transferrable for proteins with certain mutations or between force fields. 
@@ -93,13 +93,13 @@ Yihang Wang, João Marcelo Lamim Ribeiro, Pratyush Tiwary. (2019)
 The authors from Univ of Maryland used variational inference implemented in deep neural networks to infer reaction coordinates/CV. To sample the rare event, the authors took analogue of predictive information bottleneck, trying to maximize the prediction of future by utilizing the informaiton from the past. 
 
 
-### 4. Learn kinetic model
+### 4. Learn kinetic model <a name="kinetic"></a>
 
 [VAMPnets for deep learning of molecular kinetics](https://www.nature.com/articles/s41467-017-02388-1)  
 Andreas Mardt, Luca Pasquali, Hao Wu, Frank Noé (2018)    
 The authors from Freie Universität Berlin employ the variational approach for Markov processes (VAMP) to develop a deep learning framework for molecular kinetics using neural networks, dubbed VAMPnets. A VAMPnet encodes the entire mapping from molecular coordinates to a Markov state model (MSM), thus combining the MSM whole data processing pipeline in a single end-to-end framework. 
 
-### 5. Capture the dynamics of the molecular system 
+### 5. Capture the dynamics of the molecular system <a name="dynamic"></a>
 
 [Equivariant Hamiltonian Flows](https://arxiv.org/abs/1909.13739)   
 Danilo Jimenez Rezende, Sébastien Racanière, Irina Higgins, Peter Toth. (2019)  
@@ -129,7 +129,7 @@ The authors from Harvard and Polytechnic Milan used symplectic neural network to
 Shuo-Hui Li, Chen-Xiao Dong, Linfeng Zhang, Lei Wang. (2019)   
 The authors from CAS, Princeton Univ., and Songshan Lake Materials Lab constructed canonical transformation with symplectic neural networks. Such formulations help understand the physical meaning of latend space in the model. The authors applied this to learn slow CV of analine dipeptide and conceptual compression of MNIST dataset. 
 
-### 6. Coarse grain models 
+### 6. Coarse grain models <a name="cg"></a>
 [Machine Learning of coarse-grained Molecular Dynamics Force Fields](https://arxiv.org/pdf/1812.01736.pdf)   
 Jiang Wang, Simon Olsson, Christoph Wehmeyer, Adrià Pérez, Nicholas E. Charron, Gianni de Fabritiis, Frank Noé, Cecilia Clementi. (2018)   
 The authors from Rice University, Freie Universität Berlin, and Universitat Pompeu Fabra presented CGnet which learns coarse grain force field by using variational force matching. They also recast force-matching as a machine learning problem, allowing to decompose the force matching error into bias, variance and noise. They demonstrated the model performance on dialanine peptide simulation and Chignolin folding/unfolding in water. 
@@ -142,7 +142,7 @@ The authors from Peking Univ, Princeton Univ, and IAPCM, China presented DeepCG 
 Aleksander E. P. Durumeric, Gregory A. Voth. (2019)    
 The authors from Univ. of Chicago employed generative adversial network (GAN) for systematic molecular coarse-graining. They showed that the resulting framework can rigorously parameterize CG models containing CG sites with no prescribed connection to the reference atomistic system.  
 
-### 7. Design proteins 
+### 7. Design proteins <a name="designprot"></a>
 (Though this part is less connected to MD simulation, some of the ML-based protein design algorithms are actually inditectly learning the potential energy of proteins. So we keep a small portion here.)    
 
 [Generative models for graph-based protein design](https://openreview.net/pdf?id=SJgxrLLKOE)   
