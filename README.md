@@ -17,7 +17,11 @@ A repository of update in molecular dynamics field by recent progress in machine
 &nbsp;  
 
 
-### 1. Learn force field or molecular interactions  <a name='learnff'></a>
+### 1. Learn force field or molecular interactions  <a name='learnff'></a> 
+[Molecular Graph Convolutions: Moving Beyond Fingerprints](https://arxiv.org/abs/1603.00856)    
+Steven Kearnes, Kevin McCloskey, Marc Berndl, Vijay Pande, Patrick Riley. (2016)      
+This paper from Standford Univ and Google proposed graph representation of molecules and graph convolution to capture the interactions in the molecule. The authors used a weave module, where the atom feature and edge feature are weaved to preserve invariance of atom and pair permutation. They used Gaussian membership functions to preserve overall order invariance. 
+
 [Machine learning molecular dynamics for the simulation of infrared spectra](https://pubs.rsc.org/en/content/articlelanding/2017/sc/c7sc02267k)    
 Michael Gastegger, Jörg Behler, Philipp Marquet. (2017)    
 The authors from Univ. of Vienna and Universität Göttingen developed a molecular dipole moment model based on environment-dependent NN and combined with NN potential approach of Behler and Parrinello for ab inito MD. As an application, they obtained accurate models for predicting infrared spectra.  
