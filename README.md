@@ -24,7 +24,7 @@ This paper from Standford Univ and Google proposed graph representation of molec
 
 [An implementation of artificial neural-network potentials for atomistic materials simulations: Performance for TiO2](https://doi.org/10.1016/j.commatsci.2015.11.047)  
 NongnuchArtrith, Alexander Urban. (2016)   
-The authors from UC Berkeley developed open-source atomic energy network package, based on Behler-Parrinellow machine learning potential, which uses multilayer perceptron to learn the potential of molecules. The atomic coordinates are transformed into invariant representation of the local atomic environments and potential is trained on such representation. The authors applied the model to TiO2, ZrO2, and alpha-PbO2.
+The authors from UC Berkeley developed open-source atomic energy network package, based on Behler-Parrinello machine learning potential, which uses multilayer perceptron to learn the potential of molecules. The atomic coordinates are transformed into invariant representation of the local atomic environments and potential is trained on such representation. The authors applied the model to TiO2, ZrO2, and alpha-PbO2.
 
 [Machine learning molecular dynamics for the simulation of infrared spectra](https://pubs.rsc.org/en/content/articlelanding/2017/sc/c7sc02267k)    
 Michael Gastegger, Jörg Behler, Philipp Marquet. (2017)    
