@@ -22,6 +22,10 @@ A repository of update in molecular dynamics field by recent progress in machine
 Steven Kearnes, Kevin McCloskey, Marc Berndl, Vijay Pande, Patrick Riley. (2016)      
 This paper from Standford Univ and Google proposed graph representation of molecules and graph convolution to capture the interactions in the molecule. The authors used a weave module, where the atom feature and edge feature are weaved to preserve invariance of atom and pair permutation. They used Gaussian membership functions to preserve overall order invariance. 
 
+[An implementation of artificial neural-network potentials for atomistic materials simulations: Performance for TiO2](https://doi.org/10.1016/j.commatsci.2015.11.047)  
+NongnuchArtrith, Alexander Urban. (2016)   
+The authors from UC Berkeley developed open-source atomic energy network package, based on Behler-Parrinellow machine learning potential, which uses multilayer perceptron to learn the potential of molecules. The atomic coordinates are transformed into invariant representation of the local atomic environments and potential is trained on such representation. The authors applied the model to TiO2, ZrO2, and alpha-PbO2.
+
 [Machine learning molecular dynamics for the simulation of infrared spectra](https://pubs.rsc.org/en/content/articlelanding/2017/sc/c7sc02267k)    
 Michael Gastegger, Jörg Behler, Philipp Marquet. (2017)    
 The authors from Univ. of Vienna and Universität Göttingen developed a molecular dipole moment model based on environment-dependent NN and combined with NN potential approach of Behler and Parrinello for ab inito MD. As an application, they obtained accurate models for predicting infrared spectra.  
@@ -100,6 +104,9 @@ The authors from UIUC and Univ of Chicago introduced SRV, state-free reversible 
 Yihang Wang, João Marcelo Lamim Ribeiro, Pratyush Tiwary. (2019)   
 The authors from Univ of Maryland used variational inference implemented in deep neural networks to infer reaction coordinates/CV. To sample the rare event, the authors took analogue of predictive information bottleneck, trying to maximize the prediction of future by utilizing the informaiton from the past. 
 
+[Artificial Intelligence Assists Discovery of Reaction Coordinates and Mechanisms from Molecular Dynamics Simulations](https://arxiv.org/abs/1901.04595)   
+Hendrik Jung, Roberto Covino, Gerhard Hummer. (2019)
+The authors from Max Planck Institute of Biophysics and Goethe Univ introduced an NN-based model to find the reaction coordinates. Based on the transition path sampling (TPS) theory, the authors did MD simulations, built transition path ensemble, find reaction coordinates and do more MD simulations. 
 
 ### 4. Learn kinetic model <a name="kinetic"></a>
 
