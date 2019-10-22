@@ -26,6 +26,14 @@ This paper from Standford Univ and Google proposed graph representation of molec
 NongnuchArtrith, Alexander Urban. (2016)   
 The authors from UC Berkeley developed open-source atomic energy network package, based on Behler-Parrinello machine learning potential, which uses multilayer perceptron to learn the potential of molecules. The atomic coordinates are transformed into invariant representation of the local atomic environments and potential is trained on such representation. The authors applied the model to TiO2, ZrO2, and alpha-PbO2.
 
+[Machine learning prediction errors better than DFT accuracy](https://arxiv.org/abs/1702.05532)   
+Felix A. Faber, Luke Hutchison, Bing Huang, Justin Gilmer, Samuel S. Schoenholz, George E. Dahl, Oriol Vinyals, Steven Kearnes, Patrick F. Riley, O. Anatole von Lilienfeld. (2017)    
+The authors from Univ of Basel and Google used elastic network, bayesian regression, random forest, kernel ridge regression, gated graph NN, graph convolutions to predict QM9 data set. The representations are Coulomb matrix, BAML (bonds, angles, machine learning), ECFP4 (extended connectivity fingerprints), MARAD (molecular atomic radial angular distribution), HD, HDA, HDAD (histogram methods). They demonstrated the machine learning methods have smaller error than DFT error. 
+
+[Quantum-Chemical Insights from Deep Tensor Neural Networks](https://www.nature.com/articles/ncomms13890)   
+Kristof T. Schütt, Farhad Arbabzadah, Stefan Chmiela, Klaus R. Müller, Alexandre Tkatchenko. (2017)    
+The authors from Technische Universitat Berlin, Korea Univ, Fritz-Haber-Institut der Max-Planck-Gesellschaft and Univ of Luxembourg developed DTNN. The network used atom features and edge features for input. Edges are processed by Gaussian expansion. The edges and atoms interact through an interaction module through tensor multiplications. The authors applied this to predict chemical potentials, ring stability of molecules etc. 
+
 [Machine learning molecular dynamics for the simulation of infrared spectra](https://pubs.rsc.org/en/content/articlelanding/2017/sc/c7sc02267k)    
 Michael Gastegger, Jörg Behler, Philipp Marquet. (2017)    
 The authors from Univ. of Vienna and Universität Göttingen developed a molecular dipole moment model based on environment-dependent NN and combined with NN potential approach of Behler and Parrinello for ab inito MD. As an application, they obtained accurate models for predicting infrared spectra.  
@@ -33,6 +41,10 @@ The authors from Univ. of Vienna and Universität Göttingen developed a molecul
 [ANI-1: an extensible neural network potential with DFT accuracy at force field computational cost](https://doi.org/10.1039/c6sc05720a)   
 J. S. Smith, Isayev, A. E. Roitberg. (2017)   
 This paper from Univ. of Florida and Univ. of North Carolina presented ANI-1, which used Behler and Parrinello symmetry functions to build single-atom atomic environment vectors (AEV) as molecular representation. This is similar to the context representation of work in NLP.  
+
+[Applying machine learning techniques to predict the propertiesof energetic materials](https://arxiv.org/abs/1801.04900)   
+Daniel C. Elton, Zois Boukouvalas, Mark S. Butrico, Mark D. Fuge, Peter W. Chung. (2018)   
+The authors from Univ of Maryland applied several machine learning methods (KRR, ridge, SVR, RF, k-nearest neighbor) based on features (sum over bonds, custom descriptors, Coulomb matrices, Bag of Bonds, and fingerprints). They concluded the best featurization is sum over bonds and best model is kernel ridge regression. 
 
 [Deep Potential Molecular Dynamics: A Scalable Model with the Accuracy of Quantum Mechanics](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.143001)    
 Linfeng Zhang, Jiequn Han, Han Wang, Roberto Car, Weinan E. (2018)   
@@ -46,6 +58,10 @@ This paper from Univ. of Denmark extended neural message passing model with an e
 K. T. Schütt, H. E. Sauceda, P.-J. Kindermans, A. Tkatchenko, K.-R. Müller. (2018)   
 This paper from Technische Universita ̈t Berlin, Univ. of Luxembourg, Max Planck Institute, and Korea University presented SchNet, a variant of DTNN to learn the molecular properties and studied local chemical potential and the dynamics of C20-fullerene.  
 
+[Pixel Chem: A Representation for Predicting Material Properties with Neural Network](https://openreview.net/pdf?id=SkxYOiCqKX) 
+Shuqian Ye, Yanheng Xu, Jiechun Liang, Hao Xu, Shuhong Cai, Shixin Liu, Xi Zhu.(2019)   
+The authors designed a Pixel Chemistry network to learn a representation for predicting molecular properties. The authors proposed three new matrices, which reflect charge transfer ability, bond binding strength, and Euclidean distances between atoms. They also designed an angular interaction matrix A, describes the interaction between two atomic orbitals. 
+
 [Message-passing neural networks for high-throughput polymer screening](https://aip.scitation.org/doi/10.1063/1.5099132)  
 Peter C. St. John1, Caleb Phillips, Travis W. Kemper, A. Nolan Wilson, Yanfei Guan,  Michael F. Crowley, Mark R. Nimlos, Ross E. Larsen. (2019)  
 This paper from National Renewable Energy Lab, USA, used message-passing NN to predict polymer properties for screening purpose. They focused on larger molecules and tested the model with/without 3D conformation information, since accurate 3D structure calculation is also expensive. 
@@ -57,6 +73,7 @@ This paper from Univ. of North Carolina, Los Alamos National Lab, and Jackson St
 [LanczosNet: Multi-Scale Deep Graph Convolutional Networks](https://arxiv.org/abs/1901.01484)   
 Renjie Liao, Zhizhen Zhao, Raquel Urtasun, Richard S. Zemel. (2019)  
 The authors from Univ. of Toronto, Uber ATG, Vector Institute, UIUC and Canadian Institute of Advanced Research developed this spectral-based graph NN, which uses Lanczos algorithms to construct low rank approximations of the graph Laplacian. They benchmarked the model on citation networks and QM8 dataset. 
+
 
 ### 2. Enhanced sampling methods with ML/DL <a name='enhancesamp'></a>
 [Reinforced dynamics for enhanced sampling in large atomic and molecular systems](https://aip.scitation.org/doi/full/10.1063/1.5019675)    
@@ -72,7 +89,7 @@ Frank Noé, Simon Olsson, Jonas Köhler, Hao Wu. (2019)
 This paper from Freie Universität Berlin, Rice Univ and Tongji Univ used a generative model, Boltzmann generator machine, to generate unbiased equilibrium samples from different metastable states in one shot. This model is said to overcome rare event-sampling problems in many-body systems. 
 
 [Targeted Adversarial Learning Optimized Sampling](https://pubs.acs.org/doi/10.1021/acs.jpclett.9b02173)   
-Justin Zhang, Yi Isaac Yang, Frank Noé (2019)
+Justin Zhang, Yi Isaac Yang, Frank Noé (2019)      
 The authors from Freie Universität Berlin use adversarial training to steer a molecular dynamics ensemble towards a desired target distribution, overcoming rare-event sampling problems.
 
 [Neural networks-based variationally enhanced sampling](https://doi.org/10.1073/pnas.1907975116)  
@@ -95,6 +112,10 @@ The authors from Freie Universität Berlin built time-lagged autoencoders to lea
 [Reweighted autoencoded variational Bayes for enhanced sampling (RAVE)](https://aip.scitation.org/doi/10.1063/1.5025487)   
 João Marcelo Lamim Ribeiro,  Pablo Bravo,  Yihang Wang, and Pratyush Tiwary. (2018)   
 This paper from Univ of Maryland and Pontificia Universidad Catolica de Chile used variational autoencoder and Bayes theorem to find the reaction coordinates and approapriate weights. Kullback-Leibler divergence is calculated between this latent space distribution and the distribution of various trial reaction coordinates sampled from the simulation.
+
+[Learning protein conformational space by enforcing physics with convolutions and latent interpolations](https://arxiv.org/abs/1910.04543)   
+Venkata K. Ramaswamy, Chris G. Willcocks, Matteo T. Degiacomi. (2019)   
+This paper from Durhan Univ designed a CNN-based autoencoder to learn a continuous latent space for protein conformations. Based on the latent space, they derived a transition path between two states. The authors also augmented the network with MD simulation data, incorporating physics-based constraints, achieving high accuracy. 
 
 [Nonlinear discovery of slow molecular modes using state-free reversible VAMPnets](https://doi.org/10.1063/1.5092521)  
 Wei Chen, Hythem Sidky, Andrew L. Ferguson. (2019)   
