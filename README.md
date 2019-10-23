@@ -74,6 +74,9 @@ This paper from Univ. of North Carolina, Los Alamos National Lab, and Jackson St
 Renjie Liao, Zhizhen Zhao, Raquel Urtasun, Richard S. Zemel. (2019)  
 The authors from Univ. of Toronto, Uber ATG, Vector Institute, UIUC and Canadian Institute of Advanced Research developed this spectral-based graph NN, which uses Lanczos algorithms to construct low rank approximations of the graph Laplacian. They benchmarked the model on citation networks and QM8 dataset. 
 
+[Molecule-Augmented Attention Transformer](https://grlearning.github.io/papers/105.pdf)   
+Łukasz Maziarka, Tomasz Danel, Sławomir Mucha, Krzysztof Rataj, Jacek Tabor, Stanisław Jastrzebski. (2019)   
+The authors from Jagiellonian Univ, Ardigen and New York Univ designed this MAT graph NN model with self-attention mimicking the Transformer, consisting of multiple blocks of layer norm, multi-head self-attention, and residual net. The model achieved comparable or better results on BBBP and FreeSolv datasets comparing with MPNN.
 
 ### 2. Enhanced sampling methods with ML/DL <a name='enhancesamp'></a>
 [Reinforced dynamics for enhanced sampling in large atomic and molecular systems](https://aip.scitation.org/doi/full/10.1063/1.5019675)    
