@@ -78,6 +78,14 @@ The authors from Univ. of Toronto, Uber ATG, Vector Institute, UIUC and Canadian
 Łukasz Maziarka, Tomasz Danel, Sławomir Mucha, Krzysztof Rataj, Jacek Tabor, Stanisław Jastrzebski. (2019)   
 The authors from Jagiellonian Univ, Ardigen and New York Univ designed this MAT graph NN model with self-attention mimicking the Transformer, consisting of multiple blocks of layer norm, multi-head self-attention, and residual net. The model achieved comparable or better results on BBBP and FreeSolv datasets comparing with MPNN.
 
+[Machine Learning for Scent: Learning Generalizable Perceptual Representations of Small Molecules](https://arxiv.org/abs/1910.10685)   
+Benjamin Sanchez-Lengeling, Jennifer N. Wei, Brian K. Lee, Richard C. Gerkin, Alán Aspuru-Guzik, Alexander B. Wiltschko. (2019)   
+This paper from Google, Arizona State Univ, Univ of Toronto, Vector Institute, Canadian Institute for Advanced Research used MPNN (message passing NN) based on graph representation, to predict quantitative structure-odor relationship (QSOR), very similar to QSAR. The model out-performed molecular fingerprint-based methods. The authors showed their learned embeddings from GNN capture a meaningful odor space representation.
+
+[ProDyn0: Inferring calponin homology domain stretching behavior using graph neural networks](https://arxiv.org/abs/1910.09738)   
+Ali Madani, Cyna Shirazinejad, Jia Rui Ong, Hengameh Shams, Mohammad Mofrad. (2019)   
+This paper from UC Berkeley used MPNN and residual gated graph convnets to predict the pattern and mode of SMD (steered MD) simulation results. The authors created this data set of 2020 mutants of calponin homology domain (CH,  an actin-binding domain) with SMD simulation results. Capturing the force between CH domains is capturing molecular interactions between amino acid residues. 
+
 ### 2. Enhanced sampling methods with ML/DL <a name='enhancesamp'></a>
 [Reinforced dynamics for enhanced sampling in large atomic and molecular systems](https://aip.scitation.org/doi/full/10.1063/1.5019675)    
 Linfeng Zhang,  Han Wang, Weinan E. (2018)   
