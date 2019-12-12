@@ -26,6 +26,10 @@ This paper from Standford Univ and Google proposed graph representation of molec
 NongnuchArtrith, Alexander Urban. (2016)   
 The authors from UC Berkeley developed open-source atomic energy network package, based on Behler-Parrinello machine learning potential, which uses multilayer perceptron to learn the potential of molecules. The atomic coordinates are transformed into invariant representation of the local atomic environments and potential is trained on such representation. The authors applied the model to TiO2, ZrO2, and alpha-PbO2.
 
+[Chemception: A Deep Neural Network with Minimal Chemistry Knowledge Matches the Performance of Expert-developed QSAR/QSPR Models](https://arxiv.org/abs/1706.06689)   
+Garrett B. Goh, Charles Siegel, Abhinav Vishnu, Nathan O. Hodas, Nathan Baker. (2017)   
+The authors from Pacific Northwest National Laboratory developed this computer vision-based model for chemicals. By converting SMILES strings to images and encoding atom properties through color channels, the model slightly outperforms ECFP fingerprints-based deep NN in activity and solvation, and slightly underforms in toxicity prediction. 
+
 [Machine learning prediction errors better than DFT accuracy](https://arxiv.org/abs/1702.05532)   
 Felix A. Faber, Luke Hutchison, Bing Huang, Justin Gilmer, Samuel S. Schoenholz, George E. Dahl, Oriol Vinyals, Steven Kearnes, Patrick F. Riley, O. Anatole von Lilienfeld. (2017)    
 The authors from Univ of Basel and Google used elastic network, bayesian regression, random forest, kernel ridge regression, gated graph NN, graph convolutions to predict QM9 data set. The representations are Coulomb matrix, BAML (bonds, angles, machine learning), ECFP4 (extended connectivity fingerprints), MARAD (molecular atomic radial angular distribution), HD, HDA, HDAD (histogram methods). They demonstrated the machine learning methods have smaller error than DFT error. 
@@ -41,6 +45,10 @@ The authors from Univ. of Vienna and Universität Göttingen developed a molecul
 [ANI-1: an extensible neural network potential with DFT accuracy at force field computational cost](https://doi.org/10.1039/c6sc05720a)   
 J. S. Smith, Isayev, A. E. Roitberg. (2017)   
 This paper from Univ. of Florida and Univ. of North Carolina presented ANI-1, which used Behler and Parrinello symmetry functions to build single-atom atomic environment vectors (AEV) as molecular representation. This is similar to the context representation of work in NLP.  
+
+[Towards exact molecular dynamics simulations with machine-learned force fields](https://www.nature.com/articles/s41467-018-06169-2)
+Stefan Chmiela, Huziel E. Sauceda, Klaus-Robert Müller, Alexandre Tkatchenko. (2018)   
+The authors from Technische Universität Berlin, Fritz-Haber-Institut der Max-Planck-Gesellschaft, Korea Univ, and Univ of Luxembourg developed a kernel-based symmetric gradient-domain ML (sGDML) model to reproduce global force fields at CCSD(T) level of accuracy. It allows converged MD simulations with fully quantized electrons and nuclei. This work built on their previous work - GDML, with symmetry imposed in the current sGDML.
 
 [Applying machine learning techniques to predict the propertiesof energetic materials](https://arxiv.org/abs/1801.04900)   
 Daniel C. Elton, Zois Boukouvalas, Mark S. Butrico, Mark D. Fuge, Peter W. Chung. (2018)   
