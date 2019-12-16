@@ -47,6 +47,10 @@ The authors from Univ. of Vienna and Universität Göttingen developed a molecul
 J. S. Smith, Isayev, A. E. Roitberg. (2017)   
 This paper from Univ. of Florida and Univ. of North Carolina presented ANI-1, which used Behler and Parrinello symmetry functions to build single-atom atomic environment vectors (AEV) as molecular representation. This is similar to the context representation of work in NLP.  
 
+[ElemNet: Deep Learning the Chemistry of Materials From Only Elemental Composition](https://www.nature.com/articles/s41598-018-35934-y)     
+Dipendra Jha, Logan Ward, Arindam Paul, Wei-keng Liao, Alok Choudhary, Chris Wolverton & Ankit Agrawal. (2018)    
+The authors from Northwestern Univ, Univ of Chicago developed ElemNet, which takes elemental compositions and used 17-layer MLP architecture to predict DFT-computed formation enthalpies for quantuam materials. The authors visualized 1st, 2nd, and 8th layers of the network to elucidate the chemistry insights that the model learned.  
+
 [Towards exact molecular dynamics simulations with machine-learned force fields](https://www.nature.com/articles/s41467-018-06169-2)  
 Stefan Chmiela, Huziel E. Sauceda, Klaus-Robert Müller, Alexandre Tkatchenko. (2018)   
 The authors from Technische Universität Berlin, Fritz-Haber-Institut der Max-Planck-Gesellschaft, Korea Univ, and Univ of Luxembourg developed a kernel-based symmetric gradient-domain ML (sGDML) model to reproduce global force fields at CCSD(T) level of accuracy. It allows converged MD simulations with fully quantized electrons and nuclei. This work built on their previous work - GDML, with symmetry imposed in the current sGDML. The authors constructed FF in this 2019 [JCP paper]( https://doi.org/10.1063/1.5078687).
