@@ -124,6 +124,10 @@ The authors from Nicolaus Copernicus University showed how t-distributed stochas
 Mohammad M. Sultan, Hannah K. Wayment-Steele, Vijay S. Pande. (2018)   
 The authors from Stanford Univ used variational autoencoder with time-lagged information to learn the collective variable in latent space. They then used the latent space representation in well-tempered ensemble metadynamics. The authors showed such learned latend space is transferrable for proteins with certain mutations or between force fields. 
 
+[Molecular enhanced sampling with autoencoders: On-the-fly collective variable discovery and accelerated free energy landscape exploration]( https://doi.org/10.1002/jcc.25520)         
+Wei Chen,  Andrew L. Ferguson. (2018)       
+The authors from UIUC did on-the-fly CV discovery by using an autoencoder, so-called "chicken-and-egg" problem. The bottleneck in autoencoder maps the "intrinsic manifold". Each time after discovering the CV, the model did boundary detection and then did umbrella sampling to further explore the configurational space. They dealt with translational invariance by removing center of mass movement and dealt with rotational invariance by data augmentation. The model was benchmarked on alanine dipeptide and Trp-cage.   
+
 [Time-lagged autoencoders: Deep learning of slow collective variables for molecular kinetics](https://aip.scitation.org/doi/full/10.1063/1.5011399)   
 Christoph Wehmeyer, Frank Noé. (2018)   
 The authors from Freie Universität Berlin built time-lagged autoencoders to learn the slow collective variables. They show that time-lagged autoencoders are a nonlinear generalization of the time-lagged independent component analysis (TICA) method. 
