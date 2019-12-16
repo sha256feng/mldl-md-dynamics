@@ -154,6 +154,10 @@ The authors from Max Planck Institute of Biophysics and Goethe Univ introduced a
 Andreas Mardt, Luca Pasquali, Hao Wu, Frank Noé (2018)    
 The authors from Freie Universität Berlin employ the variational approach for Markov processes (VAMP) to develop a deep learning framework for molecular kinetics using neural networks, dubbed VAMPnets. A VAMPnet encodes the entire mapping from molecular coordinates to a Markov state model (MSM), thus combining the MSM whole data processing pipeline in a single end-to-end framework. 
 
+[Neural Mode Jump Monte Carlo](https://arxiv.org/abs/1912.05216)     
+Luigi Sbailò, Manuel Dibak, Frank Noé (2019)      
+The authors from Freie Univ Berlin and Rice Univ developed this NN-based Monte Carlo jump scheme. To sample both locally and globally metastable states, a local proposal scheme and a neural proposal scheme are applied respectively. The neural proposals connect different metastable states, where the end point is sampled from a predefined probability distribution. The neural network is trained in an unsupervised fashine, as training set gradually grows.     
+
 ### 5. Capture the dynamics of the molecular system <a name="dynamic"></a>
 
 [Equivariant Hamiltonian Flows](https://arxiv.org/abs/1909.13739)   
