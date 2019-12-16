@@ -8,6 +8,7 @@ A repository of update in molecular dynamics field by recent progress in machine
 5. [Capture dynamics of molecular system](#dynamic) 
 6. [Map between all atoms and coarse grain](#cg)  
 7. [Design proteins](#designprot)  
+8. [Protein-ligand prediction for drug discoveries](#drugdisco)   
 
 
 &nbsp;  
@@ -212,3 +213,10 @@ The authors from Univ. of Chicago employed generative adversial network (GAN) fo
 [Generative models for graph-based protein design](https://openreview.net/pdf?id=SJgxrLLKOE)   
 John Ingraham, Vikas K. Garg, Regina Barzilay, Tommi Jaakkola. (2019)   
 This paper from MIT used generative graph model to design proteins. View this as a reverse problem of protein folding/structure prediction, the authors showed their approach efficiently captures the long-range interactions that are distant in sequence but local in 3D structure. 
+
+### 8. Drug discovery <a name="drugdisco"></a> 
+
+[Boosting Docking-Based Virtual Screening with Deep Learning](https://www.doi.org/10.1021/acs.jcim.6b00355)    
+Janaina Cruz Pereira, Ernesto Raúl Caffarena, Cicero Nogueira dos Santos. (2016)    
+The authors from Fiocruz and IBM Watson developed DeepVS, a DL-based docking virtural screening. Utilizing inputs of protein-ligand complex, the authors used embeddd vectors to represent atom neighbors (type, charge, distance) and amino acid neighbors. The inputs then pass through convolution layers to extract the important features and finally predict the docking ranking list. 
+ 
