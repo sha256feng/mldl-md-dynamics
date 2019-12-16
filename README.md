@@ -8,7 +8,7 @@ A repository of update in molecular dynamics field by recent progress in machine
 5. [Capture dynamics of molecular system](#dynamic) 
 6. [Map between all atoms and coarse grain](#cg)  
 7. [Design proteins](#designprot)  
-8. [Protein-ligand prediction for drug discoveries](#drugdisco)   
+8. [Protein-ligand prediction for drug discovery](#drugdisco)   
 
 
 &nbsp;  
@@ -141,6 +141,10 @@ This paper from Univ of Maryland and Pontificia Universidad Catolica de Chile us
 Venkata K. Ramaswamy, Chris G. Willcocks, Matteo T. Degiacomi. (2019)   
 This paper from Durhan Univ designed a CNN-based autoencoder to learn a continuous latent space for protein conformations. Based on the latent space, they derived a transition path between two states. The authors also augmented the network with MD simulation data, incorporating physics-based constraints, achieving high accuracy. 
 
+[Enhancing Biomolecular Sampling with Reinforcement Learning: A Tree Search Molecular Dynamics Simulation Method](https://doi.org/10.1021/acsomega.9b01480)      
+Kento Shin, Duy Phuoc Tran, Kazuhiro Takemura, Akio Kitao, Kei Terayama, Koji Tsuda. (2018)      
+The authors from Univ of Tokyo, Tokyo Institute of Tech, RIKEN, Kyoto Univ, National Institute for Material Science developed tree search MD (TS-MD). To sample the transition pathway from a given initial configuration to a target configuration, the authors performed short MD simulations with new random velocities and considered snapshots as nodes in the tree. They used upper confidence bounds for trees (UCT) to solve the exploration-exploitation dilemma.    
+
 [Nonlinear discovery of slow molecular modes using state-free reversible VAMPnets](https://doi.org/10.1063/1.5092521)  
 Wei Chen, Hythem Sidky, Andrew L. Ferguson. (2019)   
 The authors from UIUC and Univ of Chicago introduced SRV, state-free reversible VAMPnets to learn nonlinear CV approximants. The work built on VAMPNet (variational approach for Markov processes networks). SRV learns the first few slow eigenfunctions of the spectral decomposition of the transfer operator, which evolves probability distribution at equilibrium through time. 
@@ -214,7 +218,7 @@ The authors from Univ. of Chicago employed generative adversial network (GAN) fo
 John Ingraham, Vikas K. Garg, Regina Barzilay, Tommi Jaakkola. (2019)   
 This paper from MIT used generative graph model to design proteins. View this as a reverse problem of protein folding/structure prediction, the authors showed their approach efficiently captures the long-range interactions that are distant in sequence but local in 3D structure. 
 
-### 8. Drug discovery <a name="drugdisco"></a> 
+### 8. Protein-ligand prediction for drug discovery <a name="drugdisco"></a> 
 
 [Boosting Docking-Based Virtual Screening with Deep Learning](https://www.doi.org/10.1021/acs.jcim.6b00355)    
 Janaina Cruz Pereira, Ernesto Raúl Caffarena, Cicero Nogueira dos Santos. (2016)    
