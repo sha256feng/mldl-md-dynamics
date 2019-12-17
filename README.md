@@ -218,20 +218,25 @@ The authors from Univ. of Chicago employed generative adversial network (GAN) fo
 ### 7. Design proteins <a name="designprot"></a>
 (Though this part is less connected to MD simulation, some of the ML-based protein design algorithms are actually inditectly learning the potential energy of proteins. So we keep a small portion here.)    
 
-[Generative models for graph-based protein design](https://openreview.net/pdf?id=SJgxrLLKOE)   
+[Learned Protein Embeddings for Machine Learning](https://www.doi.org/10.1093/bioinformatics/bty178)   
+Kevin K. Yang, Zachary Wu, Claire N. Bedbrook, Frances H. Arnold. (2018)     
+The authors from Caltech used doc2vec k-mers method in NLP to pretrain the embedding and further used task-specific supervised learning to learn the embedded vector for amino acids. The training datasets have sizes ranging from 81 ~ 261, regarding plasma membrane localization, thermostability, rhodopsin peak absorption wavelength etc. The authors showed the embedding outperforms one-hot encoding, mismatch kernel, feature-engineering method like ProFET and AAIndex. 
+
+[Generative Models for Graph-Based Protein Design](https://openreview.net/pdf?id=SJgxrLLKOE)   
 John Ingraham, Vikas K. Garg, Regina Barzilay, Tommi Jaakkola. (2019)   
 This paper from MIT used generative graph model to design proteins. View this as a reverse problem of protein folding/structure prediction, the authors showed their approach efficiently captures the long-range interactions that are distant in sequence but local in 3D structure. 
+
+[Learning Protein Sequnce Embedding Using Information from Structure](https://openreview.net/forum?id=SygLehCqtm)      
+Tristan Bepler, Bonnie Berger. (2019)    
+The authors from MIT developed this ELMo-like sequence embedding method by incorporating language model and structural inference. Language model predict the next amino acid in each direction, thus it captures the amino acid local context. The learned hidden states are then combined with input sequences and go through 3 layers of LSTMs for soft symmetric alignment and structural similarity prediction. Since the protein language is more at 3D structural level, the structural similarity prediction is a good task to supervise embedding training. 
+
 
 ### 8. Protein-ligand prediction for drug discovery <a name="drugdisco"></a> 
 
 [Boosting Docking-Based Virtual Screening with Deep Learning](https://www.doi.org/10.1021/acs.jcim.6b00355)    
 Janaina Cruz Pereira, Ernesto Raúl Caffarena, Cicero Nogueira dos Santos. (2016)    
 The authors from Fiocruz and IBM Watson developed DeepVS, a DL-based docking virtural screening. Utilizing inputs of protein-ligand complex, the authors used embeddd vectors to represent atom neighbors (type, charge, distance) and amino acid neighbors. The inputs then pass through convolution layers to extract the important features and finally predict the docking ranking list. 
- 
-[Learned protein embeddings for machine learning](https://www.doi.org/10.1093/bioinformatics/bty178)   
-Kevin K. Yang, Zachary Wu, Claire N. Bedbrook, Frances H. Arnold. (2018)     
-The authors from Caltech used doc2vec k-mers method in NLP to pretrain the embedding and further used task-specific supervised learning to learn the embedded vector for amino acids. The training datasets have sizes ranging from 81 ~ 261, regarding plasma membrane localization, thermostability, rhodopsin peak absorption wavelength etc. The authors showed the embedding outperforms one-hot encoding, mismatch kernel, feature-engineering method like ProFET and AAIndex. 
 
-[Learning protein sequnce embedding using information from structure](https://openreview.net/forum?id=SygLehCqtm)      
-Tristan Bepler, Bonnie Berger. (2019)    
-The authors from MIT developed this ELMo-like sequence embedding method by incorporating language model and structural inference. Language model predict the next amino acid in each direction, thus it captures the amino acid local context. The learned hidden states are then combined with input sequences and go through 3 layers of LSTMs for soft symmetric alignment and structural similarity prediction. Since the protein language is more at 3D structural level, the structural similarity prediction is a good task to supervise embedding training. 
+[DeepAtom: A Framework for Protein-Ligand Binding Affinity Prediction](https://arxiv.org/abs/1912.00318)      
+Yanjun Li, Mohammad A. Rezaei, Chenglong Li, Xiaolin Li, and Dapeng Wu. (2019)      
+The authors from Univ of Florida developed DeepAtom, a CNN-based framework to predict binding affinity. The input features of protein-ligand complex are atom types, e.g, H-bond donor/acceptor, positive/negative, hydrophobic etc, and volumn features. 3D CNN with maxpooling and shuffle groups are used in the model. The authors benchmarked on PDBbind dataset. 
