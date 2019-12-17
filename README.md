@@ -231,3 +231,7 @@ The authors from Fiocruz and IBM Watson developed DeepVS, a DL-based docking vir
 [Learned protein embeddings for machine learning](https://www.doi.org/10.1093/bioinformatics/bty178)   
 Kevin K. Yang, Zachary Wu, Claire N. Bedbrook, Frances H. Arnold. (2018)     
 The authors from Caltech used doc2vec k-mers method in NLP to pretrain the embedding and further used task-specific supervised learning to learn the embedded vector for amino acids. The training datasets have sizes ranging from 81 ~ 261, regarding plasma membrane localization, thermostability, rhodopsin peak absorption wavelength etc. The authors showed the embedding outperforms one-hot encoding, mismatch kernel, feature-engineering method like ProFET and AAIndex. 
+
+[Learning protein sequnce embedding using information from structure](https://openreview.net/forum?id=SygLehCqtm)      
+Tristan Bepler, Bonnie Berger. (2019)    
+The authors from MIT developed this ELMo-like sequence embedding method by incorporating language model and structural inference. Language model predict the next amino acid in each direction, thus it captures the amino acid local context. The learned hidden states are then combined with input sequences and go through 3 layers of LSTMs for soft symmetric alignment and structural similarity prediction. Since the protein language is more at 3D structural level, the structural similarity prediction is a good task to supervise embedding training. 
