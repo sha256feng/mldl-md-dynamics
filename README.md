@@ -228,3 +228,6 @@ This paper from MIT used generative graph model to design proteins. View this as
 Janaina Cruz Pereira, Ernesto Raúl Caffarena, Cicero Nogueira dos Santos. (2016)    
 The authors from Fiocruz and IBM Watson developed DeepVS, a DL-based docking virtural screening. Utilizing inputs of protein-ligand complex, the authors used embeddd vectors to represent atom neighbors (type, charge, distance) and amino acid neighbors. The inputs then pass through convolution layers to extract the important features and finally predict the docking ranking list. 
  
+[Learned protein embeddings for machine learning](https://www.doi.org/10.1093/bioinformatics/bty178)   
+Kevin K. Yang, Zachary Wu, Claire N. Bedbrook, Frances H. Arnold. (2018)     
+The authors from Caltech used doc2vec k-mers method in NLP to pretrain the embedding and further used task-specific supervised learning to learn the embedded vector for amino acids. The training datasets have sizes ranging from 81 ~ 261, regarding plasma membrane localization, thermostability, rhodopsin peak absorption wavelength etc. The authors showed the embedding outperforms one-hot encoding, mismatch kernel, feature-engineering method like ProFET and AAIndex. 
