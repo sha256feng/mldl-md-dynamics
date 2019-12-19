@@ -241,6 +241,10 @@ The authors from Atomwise Inc developed AtomNet using 3D CNN to predict bioactiv
 Janaina Cruz Pereira, Ernesto Raúl Caffarena, Cicero Nogueira dos Santos. (2016)    
 The authors from Fiocruz and IBM Watson developed DeepVS, a DL-based docking virtural screening. Utilizing inputs of protein-ligand complex, the authors used embeddd vectors to represent atom neighbors (type, charge, distance) and amino acid neighbors. The inputs then pass through convolution layers to extract the important features and finally predict the docking ranking list. 
 
+[Atomic Convolutional Networks for Predicting Protein-Ligand Binding Affinity](https://arxiv.org/abs/1703.10603)      
+Joseph Gomes, Bharath Ramsundar, Evan N. Feinberg, Vijay S. Pande. (2017)         
+The authors from Stanford Univ developed ACNN (atomistic CNN) for predicting protein-ligand affinity. To represent the local chemical environment, they used atome type convolution to integrate local environment, and radial pooling on distance matrix with neighbor list construction, similar to the graph representation. The output of model is energy, the authors also integrate thermodynamic cycle to learn the binding free energy from G\_{lig}, G\_{prot}, and G\_{complex}. The implementation was compared with grid featurizer, GCNN and ECFP fingerprint methods on PDBbind dataset. 
+
 [DeepAtom: A Framework for Protein-Ligand Binding Affinity Prediction](https://arxiv.org/abs/1912.00318)      
 Yanjun Li, Mohammad A. Rezaei, Chenglong Li, Xiaolin Li, and Dapeng Wu. (2019)      
 The authors from Univ of Florida developed DeepAtom, a CNN-based framework to predict binding affinity. The input features of protein-ligand complex are atom types, e.g, H-bond donor/acceptor, positive/negative, hydrophobic etc, and volumn features. 3D CNN with maxpooling and shuffle groups are used in the model. The authors benchmarked on PDBbind dataset. 
