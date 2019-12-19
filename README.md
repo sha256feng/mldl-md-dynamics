@@ -233,6 +233,10 @@ The authors from MIT developed this ELMo-like sequence embedding method by incor
 
 ### 8. Protein-ligand prediction for drug discovery <a name="drugdisco"></a> 
 
+[AtomNet: A Deep Convolutional Neural Network for Bioactivity Prediction in Structure-based Drug Discovery](https://arxiv.org/abs/1510.02855)       
+Izhar Wallach, Michael Dzamba, Abraham Heifets. (2015)       
+The authors from Atomwise Inc developed AtomNet using 3D CNN to predict bioactivity (effectiveness of ligands). The input features are 3D grids of the protein-ligand complex, with center of mass centered at Cartesian origin. Four layers of convolution layers were applied, followed with two fully-connected layers. The model was benchmarked on DUDE and ChEMBL-20 PMD datasets. 
+
 [Boosting Docking-Based Virtual Screening with Deep Learning](https://www.doi.org/10.1021/acs.jcim.6b00355)    
 Janaina Cruz Pereira, Ernesto Raúl Caffarena, Cicero Nogueira dos Santos. (2016)    
 The authors from Fiocruz and IBM Watson developed DeepVS, a DL-based docking virtural screening. Utilizing inputs of protein-ligand complex, the authors used embeddd vectors to represent atom neighbors (type, charge, distance) and amino acid neighbors. The inputs then pass through convolution layers to extract the important features and finally predict the docking ranking list. 
