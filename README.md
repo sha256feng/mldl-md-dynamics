@@ -252,7 +252,7 @@ The authors from Stanford Univ developed ACNN (atomistic CNN) for predicting pro
 [Automatic Chemical Design Using a Data-Driven Continuous Representation of Molecules](https://www.doi.org/10.1021/acscentsci.7b00572)         
 Rafael Gómez-Bombarelli, Jennifer N. Wei, David Duvenaud, José Miguel Hernández-Lobato, Benjamín Sánchez-Lengeling, Dennis Sheberla, Jorge Aguilera-Iparraguirre, Timothy D. Hirzel, Ryan P. Adams, Alán Aspuru-Guzik. (2018)     
 
-The authors from Kyulux North America Inc, Harvard Univ, Univ of Toronto, Univ of Cambridge, Google Brain, Princeton Univ, and CIFAR designed a VAE(variational autoencoder)-style model to learn a latent continuous space for chemical structure. The input is SMILE strings, going through RNN or CNN to map to latent space, and later is restructed to SMILE strings. They also built a prediction model based on latent space representation to predict drug properties, so that chemicals with desirable properties  can be designed. 
+The authors from Kyulux North America Inc, Harvard, UToronto, UCambridge, Google, Princeton Univ, and CIFAR designed a VAE(variational autoencoder)-style model to learn a continuous latent space for chemicals. The input is SMILE string, going through RNN or CNN to map to latent space, and later is reconstructed to SMILE strings. They also built a prediction model using latent space vectors to predict drug properties.
 
 
 [DeepAtom: A Framework for Protein-Ligand Binding Affinity Prediction](https://arxiv.org/abs/1912.00318)      
