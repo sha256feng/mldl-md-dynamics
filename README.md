@@ -231,7 +231,7 @@ Tristan Bepler, Bonnie Berger. (2019)
 The authors from MIT developed this ELMo-like sequence embedding method by incorporating language model and structural inference. Language model predict the next amino acid in each direction, thus it captures the amino acid local context. The learned hidden states are then combined with input sequences and go through 3 layers of LSTMs for soft symmetric alignment and structural similarity prediction. Since the protein language is more at 3D structural level, the structural similarity prediction is a good task to supervise embedding training. 
 
 
-### 8. Protein-ligand prediction for drug discovery <a name="drugdisco"></a> 
+### 8. Protein-ligand prediction & chemical space for drug discovery <a name="drugdisco"></a> 
 
 [AtomNet: A Deep Convolutional Neural Network for Bioactivity Prediction in Structure-based Drug Discovery](https://arxiv.org/abs/1510.02855)       
 Izhar Wallach, Michael Dzamba, Abraham Heifets. (2015)       
@@ -248,6 +248,12 @@ The authors from Univ of Pittsburgh and College of New Jersy developed a 3D CNN 
 [Atomic Convolutional Networks for Predicting Protein-Ligand Binding Affinity](https://arxiv.org/abs/1703.10603)      
 Joseph Gomes, Bharath Ramsundar, Evan N. Feinberg, Vijay S. Pande. (2017)         
 The authors from Stanford Univ developed ACNN (atomistic CNN) for predicting protein-ligand affinity. To represent the local chemical environment, they used atome type convolution to integrate local environment, and radial pooling on distance matrix with neighbor list construction, similar to the graph representation. The output of model is energy, the authors also integrate thermodynamic cycle to learn the binding free energy from G\_{lig}, G\_{prot}, and G\_{complex}. The implementation was compared with grid featurizer, GCNN and ECFP fingerprint methods on PDBbind dataset. 
+
+[Automatic Chemical Design Using a Data-Driven Continuous Representation of Molecules](https://www.doi.org/10.1021/acscentsci.7b00572)         
+Rafael Gómez-Bombarelli, Jennifer N. Wei, David Duvenaud, José Miguel Hernández-Lobato, Benjamín Sánchez-Lengeling, Dennis Sheberla, Jorge Aguilera-Iparraguirre, Timothy D. Hirzel, Ryan P. Adams, Alán Aspuru-Guzik. (2018)     
+
+The authors from Kyulux North America Inc, Harvard Univ, Univ of Toronto, Univ of Cambridge, Google Brain, Princeton Univ, and CIFAR designed a VAE(variational autoencoder)-style model to learn a latent continuous space for chemical structure. The input is SMILE strings, going through RNN or CNN to map to latent space, and later is restructed to SMILE strings. They also built a prediction model based on latent space representation to predict drug properties, so that chemicals with desirable properties  can be designed. 
+
 
 [DeepAtom: A Framework for Protein-Ligand Binding Affinity Prediction](https://arxiv.org/abs/1912.00318)      
 Yanjun Li, Mohammad A. Rezaei, Chenglong Li, Xiaolin Li, and Dapeng Wu. (2019)      
