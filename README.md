@@ -258,6 +258,9 @@ Rafael Gómez-Bombarelli, Jennifer N. Wei, David Duvenaud, José Miguel Hernánd
 
 The authors from Kyulux North America Inc, Harvard, UToronto, UCambridge, Google, Princeton Univ, and CIFAR designed a VAE(variational autoencoder)-style model to learn a continuous latent space for chemicals. The input is SMILE string, going through RNN or CNN to map to latent space, and later is reconstructed to SMILE strings. They also built a prediction model using latent space vectors to predict drug properties.
 
+[KDEEP: Protein−Ligand Absolute Binding Affinity Prediction via 3D-Convolutional Neural Networks](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.7b00650)        
+JoséJimeńez, MihaŠkalic, GerardMartínez-Rosell, and Gianni De Fabritiis. (2018)        
+The authors from Univ Pompeu Fabra and ICREA, Spain developed K_DEEP model to predict protein-ligand binding affinity by 3D convolution. The authors voxelized the protein-ligand complex and used a set of 3D descriptors, e.g., ionizable, hydrophobic, aromatic, H-bond acc/rec, etc. as the input features. They adapted SqueezeNet archietecture as the 3D CNN model. Rotational invariance is achieved by data augmentation rotating the input subgrids. The model was benchmarked on PDBbind and CSAR.   
 
 [DeepAtom: A Framework for Protein-Ligand Binding Affinity Prediction](https://arxiv.org/abs/1912.00318)      
 Yanjun Li, Mohammad A. Rezaei, Chenglong Li, Xiaolin Li, and Dapeng Wu. (2019)      
