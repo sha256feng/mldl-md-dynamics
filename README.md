@@ -257,6 +257,10 @@ The authors from AstraZeneca developed a RNN-based reinforcement learning model 
 Artur Kadurin, Sergey Nikolenko, Kuzma Khrabrov, Alex Aliper, and Alex Zhavoronkov. (2017)    
 The authors from JHU, National Research Univ, Steklov Math Inst, Mail.Ru Group, Biogerontology Res Foundation, Moscow Inst of Physics and Tech, Kazan Federal Univ developed a GAN model, druGAN. The adversarial autoencoder (AAE) has molecular fingerprints as input and reconstruction output. Discriminator serves as teacher for the encoder to regularize the model. They also compared performance of AAE vs VAE. 
 
+[Generating Focused Molecule Libraries for Drug Discovery with Recurrent Neural Networks](https://doi.org/10.1021/acscentsci.7b00512)     
+Marwin H. S. Segler, Thierry Kogej, Christian Tyrchan, Mark P. Waller. (2017)       
+The authors from Westfal̈ische Wilhelms-Universitaẗ Münster, AstraZeneca and Shanghai Univ trained an RNN model based on SMILE strings to learn to generate molecules for a specific target. To learn the language model of drug molecules, they first trained it on a bigger dataset. Later they trained the model on smaller dataset to finetune it.   
+
 [Automatic Chemical Design Using a Data-Driven Continuous Representation of Molecules](https://www.doi.org/10.1021/acscentsci.7b00572)         
 Rafael Gómez-Bombarelli, Jennifer N. Wei, David Duvenaud, José Miguel Hernández-Lobato, Benjamín Sánchez-Lengeling, Dennis Sheberla, Jorge Aguilera-Iparraguirre, Timothy D. Hirzel, Ryan P. Adams, Alán Aspuru-Guzik. (2018)     
 
