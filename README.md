@@ -249,7 +249,11 @@ The authors from Univ of Pittsburgh and College of New Jersy developed a 3D CNN 
 Joseph Gomes, Bharath Ramsundar, Evan N. Feinberg, Vijay S. Pande. (2017)         
 The authors from Stanford Univ developed ACNN (atomistic CNN) for predicting protein-ligand affinity. To represent the local chemical environment, they used atome type convolution to integrate local environment, and radial pooling on distance matrix with neighbor list construction, similar to the graph representation. The output of model is energy, the authors also integrate thermodynamic cycle to learn the binding free energy from G\_{lig}, G\_{prot}, and G\_{complex}. The implementation was compared with grid featurizer, GCNN and ECFP fingerprint methods on PDBbind dataset. 
 
-[druGAN: an advanced generative adversarial autoencoder model for de novo generation of new molecules with desired molecular properties in silico](https://pubs.acs.org/doi/10.1021/acs.molpharmaceut.7b00346)      
+[Molecular de-novo Design through Deep Reinforcement Learning](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-017-0235-x)      
+Marcus Olivecrona, Thomas Blaschke, Ola Engkvist and Hongming Chen. (2017)     
+The authors from AstraZeneca developed a RNN-based reinforcement learning model to do de-novo drug design for desired properties. The input are SMILE strings with representation learned by RNN through predicting next character in the string. This pretrained RNN is then refined with policy-based RL to get more reward so that the properties of molecules are desired. 
+
+[druGAN: An Advanced Generative Adversarial Autoencoder Model for de novo Generation of New Molecules with Desired Molecular Properties in silico](https://pubs.acs.org/doi/10.1021/acs.molpharmaceut.7b00346)      
 Artur Kadurin, Sergey Nikolenko, Kuzma Khrabrov, Alex Aliper, and Alex Zhavoronkov. (2017)    
 The authors from JHU, National Research Univ, Steklov Math Inst, Mail.Ru Group, Biogerontology Res Foundation, Moscow Inst of Physics and Tech, Kazan Federal Univ developed a GAN model, druGAN. The adversarial autoencoder (AAE) has molecular fingerprints as input and reconstruction output. Discriminator serves as teacher for the encoder to regularize the model. They also compared performance of AAE vs VAE. 
 
