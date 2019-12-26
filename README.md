@@ -277,3 +277,7 @@ The authors from Univ of Florida developed DeepAtom, a CNN-based framework to pr
 [OnionNet: a Multiple-Layer Intermolecular-Contact-Based Convolutional Neural Network for Protein−Ligand Binding Affinity Prediction](https://www.doi.org/10.1021/acsomega.9b01997)      
 Liangzhen Zheng, Jingrong Fan, and Yuguang Mu. (2019)     
 The authors from Nanyang Tech Univ developed OnionNet, a deep CNN model, to predict binding affinity of ligands to proteins given the structural information known. For featurization, the authors used element-pair-specific contacts between ligands and protein atoms, and grouped the contacts into different distance ranges, to encode the atom local environment. Three 2D-convolution layers were used without maxpooling. The model was benchmarked on PDBbind dataset and outperformed Pafnucy and RF-Score. 
+
+[TF3P: Three-dimensional Force Fields Fingerprint Learned by Deep Capsular Network](https://arxiv.org/abs/1912.11430)    
+Yanxing Wang, Jianxing Hu, Junyong Lai, Yibo Li, Hongwei Jin, Lihe Zhang, Liangren Zhang, Zhenming Liu. (2019)      
+The authors from Peking Univ developed a 3D fingerprint method by learning the latent space in capsular network. The capsNet contains encoder and decoder parts. The inputs are based on grid and use alkana carbon and proton to probe the vdW and eletrostatic potential. The fingerprints learned by TF3P are sensitive to 3D conformational change. 
