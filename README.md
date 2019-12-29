@@ -278,6 +278,10 @@ The authors from Univ Pompeu Fabra and ICREA, Spain developed K_DEEP model to pr
 Yanjun Li, Mohammad A. Rezaei, Chenglong Li, Xiaolin Li, and Dapeng Wu. (2019)      
 The authors from Univ of Florida developed DeepAtom, a CNN-based framework to predict binding affinity. The input features of protein-ligand complex are atom types, e.g, H-bond donor/acceptor, positive/negative, hydrophobic etc, and volumn features. 3D CNN with maxpooling and shuffle groups are used in the model. The authors benchmarked on PDBbind dataset. 
 
+[Learning from the Ligand: Using Ligand-Based Features to Improve Binding Affinity Prediction](https://doi.org/10.26434/chemrxiv.8174525.v1)      
+Fergus Boyles, Charlotte M. Deane, and Garrett M. Morris. (2019)       
+The authors from UOxford developed a binding affinity prediction model including both protein-ligand structure and ligand-based property features. The former includes RF-Score and NNScore, while the latter includes 185 RDKit descriptors, eg., logP, molar refractivity etc. They showed those ligand-based features enhanced the performance. 
+
 [ReSimNet: drug response similarity prediction using Siamese neural networks](https://doi.org/10.1093/bioinformatics/btz411)   
 Minji Jeon, Donghyeon Park, Jinhyuk Lee, Hwisang Jeon, Miyoung Ko, Sunkyu Kim, Yonghwa Choi, Aik-Choon Tan, Jaewoo Kang. (2019)     
 The authors from Korea Univ and Univ of Colorado developed ReSimNet to predict drug response similarity. Using a data-driven approach, the model was trained on drug-gene transcription profile dataset to predict CMap score of two compounds. It was later tested on ZINC15 dataset to show it is able to identify similar chemical compounds of a prototype drug.   
