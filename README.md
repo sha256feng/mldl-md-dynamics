@@ -261,6 +261,10 @@ The authors from JHU, National Research Univ, Steklov Math Inst, Mail.Ru Group, 
 Marwin H. S. Segler, Thierry Kogej, Christian Tyrchan, Mark P. Waller. (2017)       
 The authors from Westfal̈ische Wilhelms-Universitaẗ Münster, AstraZeneca and Shanghai Univ trained an RNN model based on SMILE strings to learn to generate molecules for a specific target. To learn the language model of drug molecules, they first trained it on a bigger dataset. Later they trained the model on smaller dataset to finetune it.   
 
+[Mol2vec: unsupervised machine learning approach with chemical intuition](https://doi.org/10.1021/acs.jcim.7b00616)     
+Sabrina Jaeger, Simone Fulle,  Samo Turk. (2017)       
+The authors from BioMed X Innovation Center, Heidelberg developed Mol2Vec model to learn vector embedding for chemicals. They treated a molecule as a sentence and ECFP finger prints as words, utilizing CBOW and Skip-gram in Word2Vec as prediction tasks to learn the word embedding.  This Mol2Vec was later combined with Prot2Vec to predict drug response. 
+
 [Automatic Chemical Design Using a Data-Driven Continuous Representation of Molecules](https://www.doi.org/10.1021/acscentsci.7b00572)         
 Rafael Gómez-Bombarelli, Jennifer N. Wei, David Duvenaud, José Miguel Hernández-Lobato, Benjamín Sánchez-Lengeling, Dennis Sheberla, Jorge Aguilera-Iparraguirre, Timothy D. Hirzel, Ryan P. Adams, Alán Aspuru-Guzik. (2018)     
 
