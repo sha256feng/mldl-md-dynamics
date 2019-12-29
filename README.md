@@ -274,6 +274,11 @@ The authors from Univ Pompeu Fabra and ICREA, Spain developed K_DEEP model to pr
 Yanjun Li, Mohammad A. Rezaei, Chenglong Li, Xiaolin Li, and Dapeng Wu. (2019)      
 The authors from Univ of Florida developed DeepAtom, a CNN-based framework to predict binding affinity. The input features of protein-ligand complex are atom types, e.g, H-bond donor/acceptor, positive/negative, hydrophobic etc, and volumn features. 3D CNN with maxpooling and shuffle groups are used in the model. The authors benchmarked on PDBbind dataset. 
 
+[ReSimNet: drug response similarity prediction using Siamese neural networks](https://doi.org/10.1093/bioinformatics/btz411)   
+Minji Jeon, Donghyeon Park, Jinhyuk Lee, Hwisang Jeon, Miyoung Ko, Sunkyu Kim, Yonghwa Choi, Aik-Choon Tan, Jaewoo Kang. (2019)     
+The authors from Korea Univ and Univ of Colorado developed ReSimNet to predict drug response similarity. Using a data-driven approach, the model was trained on drug-gene transcription profile dataset to predict CMap score of two compounds. It was later tested on ZINC15 dataset to show it is able to identify similar chemical compounds of a prototype drug.   
+
+
 [OnionNet: a Multiple-Layer Intermolecular-Contact-Based Convolutional Neural Network for Protein−Ligand Binding Affinity Prediction](https://www.doi.org/10.1021/acsomega.9b01997)      
 Liangzhen Zheng, Jingrong Fan, and Yuguang Mu. (2019)     
 The authors from Nanyang Tech Univ developed OnionNet, a deep CNN model, to predict binding affinity of ligands to proteins given the structural information known. For featurization, the authors used element-pair-specific contacts between ligands and protein atoms, and grouped the contacts into different distance ranges, to encode the atom local environment. Three 2D-convolution layers were used without maxpooling. The model was benchmarked on PDBbind dataset and outperformed Pafnucy and RF-Score. 
