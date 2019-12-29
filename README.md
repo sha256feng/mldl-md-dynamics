@@ -282,6 +282,9 @@ The authors from Univ of Florida developed DeepAtom, a CNN-based framework to pr
 Minji Jeon, Donghyeon Park, Jinhyuk Lee, Hwisang Jeon, Miyoung Ko, Sunkyu Kim, Yonghwa Choi, Aik-Choon Tan, Jaewoo Kang. (2019)     
 The authors from Korea Univ and Univ of Colorado developed ReSimNet to predict drug response similarity. Using a data-driven approach, the model was trained on drug-gene transcription profile dataset to predict CMap score of two compounds. It was later tested on ZINC15 dataset to show it is able to identify similar chemical compounds of a prototype drug.   
 
+[Target-Specific Prediction of Ligand Affinity with Structure-Based Interaction Fingerprints](https://doi.org/10.1021/acs.jcim.9b00457)      
+Florian Leidner, Nese Kurt Yilmaz, and Celia A. Schiffer. (2019)       
+The authors from Univ of Massachusette used gradient boosting method to predict HIV-1 protease inhibitor affinity. They used hierachical clustering to identify the various core structures. Then 3D protein-ligand interaction fingerprints were used as input. The authors also identified important features, e.g., specific vdW interactions on key residues. 
 
 [OnionNet: a Multiple-Layer Intermolecular-Contact-Based Convolutional Neural Network for Protein−Ligand Binding Affinity Prediction](https://www.doi.org/10.1021/acsomega.9b01997)      
 Liangzhen Zheng, Jingrong Fan, and Yuguang Mu. (2019)     
