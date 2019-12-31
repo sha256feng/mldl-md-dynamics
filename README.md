@@ -274,9 +274,10 @@ The authors from Kyulux North America Inc, Harvard, UToronto, UCambridge, Google
 JoséJimeńez, MihaŠkalic, GerardMartínez-Rosell, and Gianni De Fabritiis. (2018)        
 The authors from Univ Pompeu Fabra and ICREA, Spain developed K_DEEP model to predict protein-ligand binding affinity by 3D convolution. The authors voxelized the protein-ligand complex and used a set of 3D descriptors, e.g., ionizable, hydrophobic, aromatic, H-bond acc/rec, etc. as the input features. They adapted SqueezeNet archietecture as the 3D CNN model. Rotational invariance is achieved by data augmentation rotating the input subgrids. The model was benchmarked on PDBbind and CSAR.   
 
-[DeepAtom: A Framework for Protein-Ligand Binding Affinity Prediction](https://arxiv.org/abs/1912.00318)      
-Yanjun Li, Mohammad A. Rezaei, Chenglong Li, Xiaolin Li, and Dapeng Wu. (2019)      
-The authors from Univ of Florida developed DeepAtom, a CNN-based framework to predict binding affinity. The input features of protein-ligand complex are atom types, e.g, H-bond donor/acceptor, positive/negative, hydrophobic etc, and volumn features. 3D CNN with maxpooling and shuffle groups are used in the model. The authors benchmarked on PDBbind dataset. 
+
+[WideDTA: prediction of drug-target binding affinity](https://arxiv.org/abs/1902.04166)      
+Hakime Öztürk, Elif Ozkirimli, Arzucan Özgür. (2019)     
+The authors from Bogazici Univ in Turkey developed an NLP-based method, WideDTA, for predicting ligand binding affinity. The 'words' of protein are 3-residue representations, while 'word' for ligand is 8-char subsequences of sliding window based on SMILE strings. Using CNN, the authors showed their model outperformed DeepDTA on KIBA dataset.
 
 [Learning from the Ligand: Using Ligand-Based Features to Improve Binding Affinity Prediction](https://doi.org/10.26434/chemrxiv.8174525.v1)      
 Fergus Boyles, Charlotte M. Deane, and Garrett M. Morris. (2019)       
@@ -297,3 +298,7 @@ The authors from Nanyang Tech Univ developed OnionNet, a deep CNN model, to pred
 [TF3P: Three-dimensional Force Fields Fingerprint Learned by Deep Capsular Network](https://arxiv.org/abs/1912.11430)    
 Yanxing Wang, Jianxing Hu, Junyong Lai, Yibo Li, Hongwei Jin, Lihe Zhang, Liangren Zhang, Zhenming Liu. (2019)      
 The authors from Peking Univ developed a 3D fingerprint method by learning the latent space in capsular network. The capsNet contains encoder and decoder parts. The inputs are based on grid and use alkana carbon and proton to probe the vdW and eletrostatic potential. The fingerprints learned by TF3P are sensitive to 3D conformational change. 
+
+[DeepAtom: A Framework for Protein-Ligand Binding Affinity Prediction](https://arxiv.org/abs/1912.00318)      
+Yanjun Li, Mohammad A. Rezaei, Chenglong Li, Xiaolin Li, and Dapeng Wu. (2019)      
+The authors from Univ of Florida developed DeepAtom, a CNN-based framework to predict binding affinity. The input features of protein-ligand complex are atom types, e.g, H-bond donor/acceptor, positive/negative, hydrophobic etc, and volumn features. 3D CNN with maxpooling and shuffle groups are used in the model. The authors benchmarked on PDBbind dataset. 
