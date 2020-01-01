@@ -265,6 +265,10 @@ The authors from Westfal̈ische Wilhelms-Universitaẗ Münster, AstraZeneca and
 Sabrina Jaeger, Simone Fulle,  Samo Turk. (2017)       
 The authors from BioMed X Innovation Center, Heidelberg developed Mol2Vec model to learn vector embedding for chemicals. They treated a molecule as a sentence and ECFP finger prints as words, utilizing CBOW and Skip-gram in Word2Vec as prediction tasks to learn the word embedding.  This Mol2Vec was later combined with Prot2Vec to predict drug response. 
 
+[Representability of algebraic topology for biomolecules in machine learning based scoring and virtual screening](https://doi.org/10.1371/journal.pcbi.1005929)       
+Zixuan Cang,Lin Mu,Guo-Wei Wei. (2018)           
+The authors from Michigan State Univ used algebraic topology for ligand representation. Using persistent homology, the authors were able to extract molecular features at different levels. They also used different ways to represent the interactions inside the molecule (Rips or Alpha complex). This has close relation to the graph-based neural net works. Know more about persistent homology, this [video](https://www.youtube.com/watch?v=h0bnG1Wavag) may be useful.
+
 [Automatic Chemical Design Using a Data-Driven Continuous Representation of Molecules](https://www.doi.org/10.1021/acscentsci.7b00572)         
 Rafael Gómez-Bombarelli, Jennifer N. Wei, David Duvenaud, José Miguel Hernández-Lobato, Benjamín Sánchez-Lengeling, Dennis Sheberla, Jorge Aguilera-Iparraguirre, Timothy D. Hirzel, Ryan P. Adams, Alán Aspuru-Guzik. (2018)     
 
