@@ -307,6 +307,12 @@ The authors from Peking Univ developed a 3D fingerprint method by learning the l
 Yanjun Li, Mohammad A. Rezaei, Chenglong Li, Xiaolin Li, and Dapeng Wu. (2019)      
 The authors from Univ of Florida developed DeepAtom, a CNN-based framework to predict binding affinity. The input features of protein-ligand complex are atom types, e.g, H-bond donor/acceptor, positive/negative, hydrophobic etc, and volumn features. 3D CNN with maxpooling and shuffle groups are used in the model. The authors benchmarked on PDBbind dataset. 
 
+[Stochastic normalizing flows](https://arxiv.org/abs/2002.06707)    
+Hao Wu, Jonas Köhler, Frank Noé. (2020)    
+The authors from Tongji Univ, Freie Universita ̈t Berlin, and Rice Univ added stochasticity into normalizing flow, by MCMC or Langevin dynamics. Normalizing flow (NF) is an invertible mapping between two distributions and well-known for its expressive power. Stochasticity improves expressiveness of NF. The authors benchmarked on double-well potential, alanine dipeptide, variational inference. 
+
+
+
 [Targeted free energy estimation via learned mappings](https://arxiv.org/abs/2002.04913)   
 Peter Wirnsberger, Andrew J. Ballard, George Papamakarios, Stuart Abercrombie, Sébastien Racanière, Alexander Pritzel, Danilo Jimenez Rezende, Charles Blundell. (2020)   
 The authors from DeepMind used normalizing flow for mapping in targeted free energy perturbation (TFEP). TFEP was developed by Jarzynski in 2002 using an invertible mapping defined on configuration space transporting distribution A to distribution A', so that A' can be close to B. Such a mapping is now done by ML generative model, normalizing flow. The authors benchmarked on a box of solvent particles to calculate free energy of growing the solute radius from Ra to Rb. 
