@@ -278,6 +278,10 @@ The authors from Kyulux North America Inc, Harvard, UToronto, UCambridge, Google
 JoséJimeńez, MihaŠkalic, GerardMartínez-Rosell, and Gianni De Fabritiis. (2018)        
 The authors from Univ Pompeu Fabra and ICREA, Spain developed K_DEEP model to predict protein-ligand binding affinity by 3D convolution. The authors voxelized the protein-ligand complex and used a set of 3D descriptors, e.g., ionizable, hydrophobic, aromatic, H-bond acc/rec, etc. as the input features. They adapted SqueezeNet archietecture as the 3D CNN model. Rotational invariance is achieved by data augmentation rotating the input subgrids. The model was benchmarked on PDBbind and CSAR.   
 
+[Development of a machine-learning model to predict Gibbs free energy of binding for protein-ligand complexes](https://doi.org/10.1016/j.bpc.2018.05.010)   
+Gabriela Bitencourt-Ferreira, Walter Filgueira de Azevedo. (2018)  
+The authors from PUCRS, Brazil combined Autodock scoring functions to predict the Gibbs free energy. They used methods like LASSO, Ridge, elastic net etc. to determine the weights for those polynomial functions. The authors also offered a  dissection of the energy/scoring function terms in several software, e.g., Autodock4, Vina, MVD.
+
 
 [WideDTA: prediction of drug-target binding affinity](https://arxiv.org/abs/1902.04166)      
 Hakime Öztürk, Elif Ozkirimli, Arzucan Özgür. (2019)     
