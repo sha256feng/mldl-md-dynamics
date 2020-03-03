@@ -8,7 +8,8 @@ A repository of update in molecular dynamics field by recent progress in machine
 5. [Capture dynamics of molecular system](#dynamic) 
 6. [Map between all atoms and coarse grain](#cg)  
 7. [Design proteins](#designprot)  
-8. [Protein-ligand prediction for drug discovery](#drugdisco)   
+8. [Protein-ligand prediction for drug discovery](#drugdisco) 
+9. [Modeling Reactive Potential Energy Surface](#ml_react)
 
 
 &nbsp;  
@@ -330,3 +331,7 @@ The authors from Peking Univ developed a 3D fingerprint method by learning the l
 Yanjun Li, Mohammad A. Rezaei, Chenglong Li, Xiaolin Li, and Dapeng Wu. (2019)      
 The authors from Univ of Florida developed DeepAtom, a CNN-based framework to predict binding affinity. The input features of protein-ligand complex are atom types, e.g, H-bond donor/acceptor, positive/negative, hydrophobic etc, and volumn features. 3D CNN with maxpooling and shuffle groups are used in the model. The authors benchmarked on PDBbind dataset. 
 
+### 9. Modeling Reactive Potential Energy Surfaces <a name="ml_react"></a>
+[Active Learning Accelerates Ab Initio Molecular Dynamics on Pericyclic Reactive Energy Surfaces](https://chemrxiv.org/articles/Active_Learning_Accelerates_Ab_Initio_Molecular_Dynamics_on_Pericyclic_Reactive_Energy_Surfaces/11910948/1)
+Shi Jun Ang, Wujie Wang, Daniel Schwalbe-Koda, Simon Axelrod, and Rafael Gómez-Bombarelli (2020)
+The authors from MIT uses active learning to simualte a complicated reactive PES with multiple products and post-transition state bifurcation.  The simulation predict a reaction mechanism that is in agreement with the experimentally-reported product distribution and suggest that post-transition state bifurcation plays a very minor role in the reaction. This overall approach is broadly applicable and opens the door to the study of dynamical effects in larger, previously-intractable reactive systems.
