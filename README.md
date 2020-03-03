@@ -185,6 +185,10 @@ This paper from Freie Universität Berlin model flows that have symmetries in th
 Yaofeng Desmond Zhong, Biswadip Dey, Amit Chakraborty. (2019)      
 This paper from Princeton University and Siemens Corp infers the dynamics of a physical system from observed state trajectories. They embedded high dimensional coordinates into low dimensions and velocity into general momentum. 
 
+[Differentiable Molecular Simulations for Control and Learning](https://arxiv.org/abs/2003.00868)
+Wujie Wang, Simon Axelrod, Rafael Gómez-Bombarelli. (2020)
+We demonstrate the use of automatic differentiation to devise simulation protocols, learn from macroscopic distribution function, and design control protocols for molecular quantum dynamics. 
+
 [Hamiltonian Neural Networks](https://arxiv.org/abs/1906.01563)   
 Sam Greydanus, Misko Dzamba, Jason Yosinski. (2019)    
 This paper from Google, PetCube and Uber trains models to learn conservation law of Hamiltonian in unsupervised way.  
