@@ -225,6 +225,10 @@ The authors from Peking Univ, Princeton Univ, and IAPCM, China presented DeepCG 
 Aleksander E. P. Durumeric, Gregory A. Voth. (2019)    
 The authors from Univ. of Chicago employed generative adversial network (GAN) for systematic molecular coarse-graining. They showed that the resulting framework can rigorously parameterize CG models containing CG sites with no prescribed connection to the reference atomistic system.  
 
+[Coarse-graining auto-encoders for molecular dynamics](https://www.nature.com/articles/s41524-019-0261-5)
+Wujie Wang, Rafael Gómez-Bombarelli (2019)
+They show a method to parameterize coarse-grained variables from data using discrete variable reparametrization. They also demonstrate the use of Graph Neural Networks to fit Coarse-Grained models by force matching. 
+
 
 ### 7. Design proteins <a name="designprot"></a>
 (Though this part is less connected to MD simulation, some of the ML-based protein design algorithms are actually inditectly learning the potential energy of proteins. So we keep a small portion here.)    
