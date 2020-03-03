@@ -8,7 +8,8 @@ A repository of update in molecular dynamics field by recent progress in machine
 5. [Capture dynamics of molecular system](#dynamic) 
 6. [Map between all atoms and coarse grain](#cg)  
 7. [Design proteins](#designprot)  
-8. [Protein-ligand prediction for drug discovery](#drugdisco)   
+8. [Protein-ligand prediction for drug discovery](#drugdisco) 
+9. [Modeling Reactive Potential Energy Surface](#ml_react)
 
 
 &nbsp;  
@@ -206,11 +207,13 @@ Hao Wu, Jonas Köhler, Frank Noé. (2020)
 The authors from Tongji Univ, Freie Universita ̈t Berlin, and Rice Univ added stochasticity into normalizing flow, by MCMC or Langevin dynamics. Normalizing flow (NF) is an invertible mapping between two distributions and well-known for its expressive power. Stochasticity improves expressiveness of NF. The authors benchmarked on double-well potential, alanine dipeptide, variational inference. 
 
 
-
 [Targeted free energy estimation via learned mappings](https://arxiv.org/abs/2002.04913)   
 Peter Wirnsberger, Andrew J. Ballard, George Papamakarios, Stuart Abercrombie, Sébastien Racanière, Alexander Pritzel, Danilo Jimenez Rezende, Charles Blundell. (2020)   
 The authors from DeepMind used normalizing flow for mapping in targeted free energy perturbation (TFEP). TFEP was developed by Jarzynski in 2002 using an invertible mapping defined on configuration space transporting distribution A to distribution A', so that A' can be close to B. Such a mapping is now done by ML generative model, normalizing flow. The authors benchmarked on a box of solvent particles to calculate free energy of growing the solute radius from Ra to Rb. 
 
+[Differentiable Molecular Simulations for Control and Learning](https://arxiv.org/abs/2003.00868)  
+Wujie Wang, Simon Axelrod, and Rafael Gómez-Bombarelli. (2020)  
+The authors from MIT and Harvard demonstrate the use of automatic differentiation to devise simulation protocols, learn from macroscopic distribution function, and design control protocols for molecular quantum dynamics. 
 
 ### 6. Coarse grain models <a name="cg"></a>
 [Machine Learning of coarse-grained Molecular Dynamics Force Fields](https://arxiv.org/pdf/1812.01736.pdf)   
@@ -224,6 +227,10 @@ The authors from Peking Univ, Princeton Univ, and IAPCM, China presented DeepCG 
 [Adversarial-Residual-Coarse-Graining: Applying machine learning theory to systematic molecular coarse-graining](https://arxiv.org/abs/1904.00871)   
 Aleksander E. P. Durumeric, Gregory A. Voth. (2019)    
 The authors from Univ. of Chicago employed generative adversial network (GAN) for systematic molecular coarse-graining. They showed that the resulting framework can rigorously parameterize CG models containing CG sites with no prescribed connection to the reference atomistic system.  
+
+[Coarse-graining auto-encoders for molecular dynamics](https://www.nature.com/articles/s41524-019-0261-5)
+Wujie Wang and Rafael Gómez-Bombarelli.  (2019)  
+The authors from MIT propose an auto-neoder based method to parameterize coarse-grained variables from data using discrete variable reparametrization. They also demonstrate the use of Graph Neural Networks to fit Coarse-Grained models by force matching. 
 
 
 ### 7. Design proteins <a name="designprot"></a>
@@ -322,3 +329,7 @@ The authors from Peking Univ developed a 3D fingerprint method by learning the l
 Yanjun Li, Mohammad A. Rezaei, Chenglong Li, Xiaolin Li, and Dapeng Wu. (2019)      
 The authors from Univ of Florida developed DeepAtom, a CNN-based framework to predict binding affinity. The input features of protein-ligand complex are atom types, e.g, H-bond donor/acceptor, positive/negative, hydrophobic etc, and volumn features. 3D CNN with maxpooling and shuffle groups are used in the model. The authors benchmarked on PDBbind dataset. 
 
+### 9. Modeling Reactive Potential Energy Surfaces <a name="ml_react"></a>
+[Active Learning Accelerates Ab Initio Molecular Dynamics on Pericyclic Reactive Energy Surfaces](https://chemrxiv.org/articles/Active_Learning_Accelerates_Ab_Initio_Molecular_Dynamics_on_Pericyclic_Reactive_Energy_Surfaces/11910948/1)  
+Shi Jun Ang, Wujie Wang, Daniel Schwalbe-Koda, Simon Axelrod, and Rafael Gómez-Bombarelli. (2020)  
+The authors from MIT uses active learning to simualte a complicated reactive PES with multiple products and post-transition state bifurcation.  The simulation predict a reaction mechanism that is in agreement with the experimentally-reported product distribution and suggest that post-transition state bifurcation plays a very minor role in the reaction. This overall approach is broadly applicable and opens the door to the study of dynamical effects in larger, previously-intractable reactive systems.
