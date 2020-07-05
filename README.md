@@ -329,6 +329,10 @@ The authors from Peking Univ developed a 3D fingerprint method by learning the l
 Yanjun Li, Mohammad A. Rezaei, Chenglong Li, Xiaolin Li, and Dapeng Wu. (2019)      
 The authors from Univ of Florida developed DeepAtom, a CNN-based framework to predict binding affinity. The input features of protein-ligand complex are atom types, e.g, H-bond donor/acceptor, positive/negative, hydrophobic etc, and volumn features. 3D CNN with maxpooling and shuffle groups are used in the model. The authors benchmarked on PDBbind dataset. 
 
+[GraphAF: a Flow-Based Autoregressive Model for Molecular Graph Generation](https://arxiv.org/abs/2001.09382)  
+Chence Shi, Minkai Xu, Zhaocheng Zhu, Weinan Zhang, Ming Zhang, Jian Tang. (2020)    
+This paper from CIFAR, Peking U and Shanghai Jiao Tong Univ developed a flow-based autoregressive model for generating molecular graph. The model defines an invertible transformation from a base distribution to a molecular graph, uses GCN to learn the graph representation, and sequentially generate nodes and edges for the molecules. The model is also able to fine tune molecular properties by taking these predictions into the reward function of reinforcement learning.  
+
 ### 9. Modeling Reactive Potential Energy Surfaces <a name="ml_react"></a>
 [Active Learning Accelerates Ab Initio Molecular Dynamics on Pericyclic Reactive Energy Surfaces](https://chemrxiv.org/articles/Active_Learning_Accelerates_Ab_Initio_Molecular_Dynamics_on_Pericyclic_Reactive_Energy_Surfaces/11910948/1)  
 Shi Jun Ang, Wujie Wang, Daniel Schwalbe-Koda, Simon Axelrod, and Rafael Gómez-Bombarelli. (2020)  
