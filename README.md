@@ -103,7 +103,7 @@ This paper from UC Berkeley used MPNN and residual gated graph convnets to predi
 ### 2. Enhanced sampling methods with ML/DL <a name='enhancesamp'></a>
 [Reinforced dynamics for enhanced sampling in large atomic and molecular systems](https://aip.scitation.org/doi/full/10.1063/1.5019675)    
 Linfeng Zhang,  Han Wang, Weinan E. (2018)   
-This paper from Peking Univ., Princeton Univ, and IAPCM, China used reinforcement learning to calculate the biasing potential on the fly, with data collected judiciously from exploration and an uncertainty indicator from NN serving as the reward function. 
+This paper from Peking Univ., Princeton Univ, and IAPCM, China used used a vanilla NN to predict the mean force on CV as a construction of FES, which is then used as a biasing potential in metadynamics on the CV. The uncertainty of the FES is used to determine the whether to use those parts for training NN or not. The authors benchmarked on a full-atom explicit solvent system of Ala dipeptide and tripeptide, and a Ala 10-mer peptide.  
 
 [Reinforcement Learning Based Adaptive Sampling: REAPing Rewards by Exploring Protein Conformational Landscapes](https://pubs.acs.org/doi/abs/10.1021/acs.jpcb.8b06521)  
 Zahra Shamsi, Kevin J. Cheng, Diwakar Shukla. (2018)   
