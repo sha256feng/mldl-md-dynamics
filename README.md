@@ -121,6 +121,10 @@ The authors from Freie Universität Berlin use adversarial training to steer a m
 Luigi Bonati, Yue-Yu Zhang,  Michele Parrinello. (2019)   
 The authors from ETH Zurich, Universita della Svizzera italiana, MARVEL (Switzerland), and Italian Institute of Technology presented a NN-based bias potential for enhanced sampling, building on their previous work of variationally enhanced sampling. Deep learning provides an expressive tool for mapping from CV to actual bias potential. 
 
+[DeepDriveMD: Deep-Learning Driven Adaptive Molecular Simulations for Protein Folding](https://arxiv.org/abs/1909.07817)   
+Hyungro Lee, Heng Ma, Matteo Turilli, Debsindhu Bhowmik, Shantenu Jha, Arvind Ramanathan. (2019)   
+The authors from Rutgers Univ, Argonne, Oak Ridge, Brookhaven National Lab developed DeepDriveMD, which uses MD simulation to generate molecular samples, use convoluted VAE based on those samples to learn the latent space, cluster the latent space and find rare regions to continue spawn new simulations. Another highlight of the work is their ensemble execution of the model on Summit.   
+
 ### 3. Learn collective variables <a name="cv"></a>
 [Machine Learning Based Dimensionality Reduction Facilitates Ligand Diffusion Paths Assessment: A Case of Cytochrome P450cam](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.6b00212)   
 Jakub Rydzewski, and Wieslaw Nowak. (2016)   
