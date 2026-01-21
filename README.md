@@ -174,7 +174,18 @@ The authors from Freie Universität Berlin employ the variational approach for M
 
 [Neural Mode Jump Monte Carlo](https://arxiv.org/abs/1912.05216)     
 Luigi Sbailò, Manuel Dibak, Frank Noé (2019)      
-The authors from Freie Univ Berlin and Rice Univ developed this NN-based Monte Carlo jump scheme. To sample both locally and globally metastable states, a local proposal scheme and a neural proposal scheme are applied respectively. The neural proposals connect different metastable states, where the end point is sampled from a predefined probability distribution. The neural network is trained in an unsupervised fashine, as training set gradually grows.     
+The authors from Freie Univ Berlin and Rice Univ developed this NN-based Monte Carlo jump scheme. To sample both locally and globally metastable states, a local proposal scheme and a neural proposal scheme are applied respectively. The neural proposals connect different metastable states, where the end point is sampled from a predefined probability distribution. The neural network is trained in an unsupervised fashine, as training set gradually grows. 
+
+[Graph dynamical networks for unsupervised learning of atomic scale dynamics in materials](https://www.nature.com/articles/s41467-019-10663-6)  
+Tian Xie, Arthur France-Lanord, Yanming Wang, Yang Shao-Horn & Jeffrey C. Grossman (2019)  
+The authors from MIT extend the VAMPnet framework to graph dynamical networks, enabling unsupervised learning of atomic-scale dynamics from molecular dynamics simulations of complex materials. By representing local atomic environments as graphs and learning their temporal evolution, the method uncovers dynamical processes in multi-component amorphous and condensed-phase systems that are difficult to identify using conventional analysis techniques.
+
+[A Graph Dynamical Neural Network Approach for Decoding Dynamical States in Ferroelectrics](https://www.sciencedirect.com/science/article/pii/S2667056923000196)  
+Abhijeet Dhakane, Tian Xie, Dundar E. Yilmaz, Adri C. T. van Duin, Bobby G. Sumpter & P. Ganesh (2023)  
+The authors from Oak Ridge National Laboratory and the University of Tennessee, Knoxville extend VAMPnet-inspired graph dynamical neural networks to ferroelectric materials, enabling unsupervised learning of metastable dynamical states and domain-wall kinetics from large-scale molecular dynamics simulations, with a scalable PyTorch-based implementation suitable for large atomistic systems. By adapting graph-based operator learning to systems with well-defined polarization order parameters, the approach captures spatial and temporal heterogeneities induced by point defects and reveals how defect–dipole interactions slow domain-wall dynamics.
+
+
+
 
 ### 5. Capture the dynamics of the molecular system <a name="dynamic"></a>
 
