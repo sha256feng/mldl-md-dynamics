@@ -348,6 +348,10 @@ The authors from Univ of Florida developed DeepAtom, a CNN-based framework to pr
 Chence Shi, Minkai Xu, Zhaocheng Zhu, Weinan Zhang, Ming Zhang, Jian Tang. (2020)    
 This paper from CIFAR, Peking U and Shanghai Jiao Tong Univ developed a flow-based autoregressive model for generating molecular graph. The model defines an invertible transformation from a base distribution to a molecular graph, uses GCN to learn the graph representation, and sequentially generate nodes and edges for the molecules. The model is also able to fine tune molecular properties by taking these predictions into the reward function of reinforcement learning.  
 
+[Matcha: Multi-Stage Riemannian Flow Matching for Accurate and Physically Valid Molecular Docking](https://arxiv.org/abs/2510.14586)  
+Daria Frolova, Talgat Daulbaev, Egor Sevriugov, Sergei A. Nikolenko, Dmitry N. Ivankov, Ivan Oseledets, Marina A. Pak. (2025)  
+The authors developed a molecular docking pipeline that combines multi-stage flow matching over geometric spaces with physical validity filtering, GNINA minimization and scoring, and benchmarking on protein-ligand docking tasks. The implementation is available at https://github.com/LigandPro/Matcha.
+
 ### 9. Modeling Reactive Potential Energy Surfaces <a name="ml_react"></a>
 [Active Learning Accelerates Ab Initio Molecular Dynamics on Pericyclic Reactive Energy Surfaces](https://chemrxiv.org/articles/Active_Learning_Accelerates_Ab_Initio_Molecular_Dynamics_on_Pericyclic_Reactive_Energy_Surfaces/11910948/1)  
 Shi Jun Ang, Wujie Wang, Daniel Schwalbe-Koda, Simon Axelrod, and Rafael Gómez-Bombarelli. (2020)  
